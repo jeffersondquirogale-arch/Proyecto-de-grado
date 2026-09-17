@@ -1,0 +1,101 @@
+---
+id: d1-inventario
+modulo: dotacion
+orden: 1
+titulo: El registro de la relación de equipos biomédicos
+criterios: [DOT-01, DOT-02, DOT-10, DOT-11, DOT-13, BP-01]
+glosario: [cuenta con, disponibilidad, criterio]
+requiere: [g8-listado-maestro]
+formulario: inventario-equipos
+tiempo_estimado: 40
+---
+
+## Cómo lo llama la norma
+
+El manual no dice "inventario". Dice:
+
+> El prestador de servicios de salud cuenta con el registro de la relación de los equipos biomédicos requeridos para la prestación de servicios de salud.
+
+En la práctica todo el mundo lo llama inventario, y está bien. Pero conviene saber el nombre normativo, porque es el que usa el verificador.
+
+Y fíjate en dos palabras: **"cuenta con"**, que como viste en G5 significa existencia obligatoria y permanente dentro del servicio, y **"requeridos"**, que acota el alcance: no es un inventario de todo lo que hay, es de lo que se necesita para prestar los servicios que ofreces.
+
+## Los seis datos obligatorios
+
+El numeral lista exactamente qué debe contener cada registro:
+
+| Dato | Obligatorio | Criterio |
+|---|---|---|
+| Nombre del equipo biomédico | Siempre | DOT-02 |
+| Marca | Siempre | DOT-02 |
+| Modelo | Siempre | DOT-02 |
+| Serie | Siempre | DOT-02 |
+| Registro sanitario o permiso de comercialización | Cuando lo requiera | DOT-03 |
+| Clasificación por riesgo | Cuando el equipo lo requiera | DOT-04 |
+
+Seis datos. Ni uno más es exigible.
+
+## Lo que la gente agrega y no es obligatorio
+
+Casi todos los inventarios que vas a ver traen código interno, ubicación, fecha de adquisición, valor, proveedor, estado. Nada de eso lo pide el numeral.
+
+Agregar código interno y ubicación es buena práctica (criterio BP-01) y te recomiendo hacerlo, porque sin ubicación el inventario sirve para contar equipos pero no para encontrarlos en una visita. Pero tienes que saber que si no lo tienes, no hay hallazgo.
+
+## Las dos condicionales
+
+Dos de los seis datos dicen "cuando lo requiera", y eso obliga a una decisión por equipo.
+
+**Registro sanitario.** El texto distingue: registro sanitario para dispositivos médicos, o permiso de comercialización para equipos biomédicos de tecnología controlada. Son dos figuras distintas y el equipo usa la que le corresponde según el Decreto 4725 de 2005.
+
+**Clasificación por riesgo.** Cuando el equipo la requiere, va en el inventario. El dato no lo inventas: está consignado en el registro sanitario o permiso, así que se copia de ahí.
+
+Si un equipo no requiere registro, el campo queda vacío y no es hallazgo. Lo que sí es hallazgo es afirmar que lo requiere y no tenerlo.
+
+## La coherencia con procesos prioritarios
+
+Este es el criterio que más gente pasa por alto. El numeral 4 dice:
+
+> La dotación de los servicios de salud está en concordancia con lo definido por el prestador en el estándar de procesos prioritarios.
+
+Es decir: el inventario se evalúa contra lo que **tú mismo** documentaste que haces. Si tu protocolo de toma de muestras menciona una centrífuga, la centrífuga tiene que estar en el inventario. Si tu documentación dice que realizas cierto procedimiento, los equipos de ese procedimiento deben aparecer.
+
+No hay una lista fija de equipos por servicio. La lista la escribiste tú en procesos prioritarios, y ahí es donde te van a medir. Por eso este criterio, DOT-10, es de nivel remisión y no de texto expreso.
+
+Lo mismo pasa en toma de muestras: el manual solo dice que el servicio cuenta con los equipos biomédicos necesarios según las muestras que se tomen, de acuerdo con lo documentado en procesos prioritarios.
+
+## Suficiencia
+
+El numeral 5 agrega algo que no es una lista sino un juicio:
+
+> La suficiencia de equipos biomédicos está relacionada con la frecuencia de uso de los mismos, incluyendo los tiempos del proceso de esterilización, cuando aplique.
+
+Tener un equipo no siempre basta. Si atiendes cuarenta pacientes al día con un solo tensiómetro, o si el ciclo de esterilización deja el instrumental inmovilizado tres horas, la cantidad puede ser insuficiente.
+
+Este criterio, DOT-11, no se puede evaluar con una regla automática: depende del volumen y del proceso. Lo evalúa el docente, igual que lo evaluaría un verificador con criterio.
+
+## Errores frecuentes en visitas
+
+| Error | Criterio afectado |
+|---|---|
+| Faltan equipos que la propia documentación menciona | DOT-10 |
+| Serie en blanco o con "N/A" en equipos que sí la tienen | DOT-02 |
+| Registro sanitario del fabricante y no del modelo específico | DOT-03 |
+| Clasificación de riesgo asignada a criterio propio | DOT-04 |
+| Inventario que incluye equipos de otra sede | DOT-01 |
+| Equipos dados de baja que siguen listados como activos | DOT-01 |
+
+El tercero merece atención: el registro sanitario ampara marcas y modelos determinados. Un registro del mismo fabricante para otro modelo no sirve, y es un error fácil de cometer cuando se copia el número de una factura.
+
+## Ejercicio
+
+En el formulario de inventario vas a registrar los equipos del caso asignado. Tres cosas que el motor va a revisar:
+
+1. Que los seis datos estén completos según corresponda
+2. Que todos los equipos mencionados en el proceso documentado aparezcan
+3. Que cada equipo que declara requerir registro sanitario lo tenga
+
+Y una advertencia que no reprueba: si dejas sin código interno o ubicación, el sistema te lo señala como buena práctica.
+
+## Para llevarte
+
+Seis datos obligatorios, dos de ellos condicionales. El inventario se evalúa contra lo que tú documentaste en procesos prioritarios, no contra una lista oficial. Y la suficiencia se juzga por frecuencia de uso, no por tener al menos uno.
