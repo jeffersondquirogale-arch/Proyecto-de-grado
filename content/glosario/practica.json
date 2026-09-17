@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "nota": "Vocabulario de gestión documental que NO está definido en la Resolución 3100. Se enseña como buena práctica y así debe presentarse al estudiante.",
+    "fecha": "2026-09-17"
+  },
+  "terminos": [
+    { "termino": "Manual", "definicion": "Documento que describe de forma general el sistema, un proceso o un conjunto de lineamientos de la institución." },
+    { "termino": "Documento de procedimiento", "definicion": "Documento que describe cómo se ejecuta un procedimiento. No confundir con el procedimiento en sí, que según el manual es el acto clínico.", "ojo": true },
+    { "termino": "Instructivo", "definicion": "Documento que detalla paso a paso una tarea puntual, normalmente derivado de un procedimiento." },
+    { "termino": "Formato", "definicion": "Plantilla en blanco diseñada para capturar información de forma estandarizada." },
+    { "termino": "Registro", "definicion": "Formato ya diligenciado. Es la evidencia de que la actividad ocurrió." },
+    { "termino": "Control documental", "definicion": "Conjunto de datos que identifican y controlan un documento: código, versión, fechas y responsables de elaboración, revisión y aprobación." },
+    { "termino": "Listado maestro de documentos", "definicion": "Inventario de los documentos vigentes, con su código, versión y ubicación." },
+    { "termino": "Control de cambios", "definicion": "Registro histórico de las modificaciones de un documento: qué cambió, cuándo y quién lo aprobó." },
+    { "termino": "Documento obsoleto", "definicion": "Versión que fue reemplazada y debe retirarse de uso, conservándose solo para efectos de trazabilidad." },
+    { "termino": "Socialización", "definicion": "Acción de dar a conocer el documento a quienes deben aplicarlo, con evidencia de que ocurrió.", "nota": "Aunque el término no está definido, la socialización sí es exigencia: hace parte de la definición oficial de información documentada." }
+  ]
+}

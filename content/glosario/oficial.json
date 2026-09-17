@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "fuente": "Resolución 3100 de 2019, anexo técnico, sección 4",
+    "archivo": "fuentes/res-3100-2019.pdf",
+    "fecha_verificacion": "2026-09-17",
+    "nota": "Transcripción de las definiciones oficiales. No modificar la redacción sin volver al texto fuente."
+  },
+  "terminos": [
+    { "termino": "Autoevaluación", "seccion": "4.1",
+      "definicion": "Mecanismo de verificación de las condiciones de habilitación establecidas en el manual, que efectúa periódicamente el prestador y que propende por el autocontrol permanente, participativo y reflexivo sobre la prestación de los servicios a ofertar." },
+
+    { "termino": "Criterio", "seccion": "4.1",
+      "definicion": "Precepto o indicador obligatorio que resume la calidad de una actividad que se pretende evaluar. Es la unidad básica del estándar sobre la cual se realiza la verificación, orientada al análisis de los riesgos y la seguridad en la atención de los pacientes.",
+      "uso_en_simulador": "Respalda el nombre de la base de criterios." },
+
+    { "termino": "Cuenta con", "seccion": "4.1",
+      "definicion": "Existencia obligatoria y permanente del talento humano, dotación, medicamentos, dispositivos médicos e insumos dentro de un servicio de salud. En infraestructura, existencia obligatoria de un recurso físico, área o ambiente de uso exclusivo del servicio, localizado al interior del servicio o de un ambiente. Los servicios interdependientes caracterizados así deben estar obligatoriamente en la misma edificación o sede; pueden ser propios o contratados.",
+      "uso_en_simulador": "Determina si la ubicación del recurso genera hallazgo." },
+
+    { "termino": "Disponibilidad", "seccion": "4.1",
+      "definicion": "Existencia obligatoria del talento humano, dotación, medicamentos, dispositivos médicos e insumos en el momento en que se requieran mientras se oferte y preste el servicio; pueden estar ubicados fuera del servicio, en permanente disposición y fácil localización. Los servicios interdependientes caracterizados así pueden estar dentro o fuera de la edificación donde se habilita el servicio que los requiere.",
+      "uso_en_simulador": "Contraparte de 'cuenta con'; relaja la exigencia de ubicación." },
+
+    { "termino": "Declaración de autoevaluación", "seccion": "4.1",
+      "definicion": "Registro que realiza el prestador en el REPS después de haber realizado la autoevaluación." },
+
+    { "termino": "Distintivo de habilitación", "seccion": "4.1",
+      "definicion": "Documento que evidencia que un servicio está habilitado y que sirve a los ciudadanos para ejercer control." },
+
+    { "termino": "Estándar", "seccion": "4.1",
+      "definicion": "Patrón que define los criterios mínimos de un servicio de salud." },
+
+    { "termino": "Inactivación de servicio", "seccion": "4.1",
+      "definicion": "Cierre del o los servicios en el REPS como consecuencia de no realizar la autoevaluación y su declaración, o por vencimiento del término de la novedad de cierre temporal." },
+
+    { "termino": "Inactivación del prestador", "seccion": "4.1",
+      "definicion": "Cierre del prestador en el REPS por no realizar la autoevaluación o por vencimiento del término de la novedad de cierre temporal de la totalidad de sus servicios." },
+
+    { "termino": "Inscripción", "seccion": "4.1",
+      "definicion": "Proceso que realizan las personas naturales o jurídicas ante la secretaría de salud departamental o distrital, con el objeto de ser autorizadas para funcionar como prestador dentro de su jurisdicción." },
+
+    { "termino": "Novedades", "seccion": "4.1",
+      "definicion": "Cambios que un prestador realiza en su información, servicios habilitados, sedes o capacidad instalada, y que debe gestionar obligatoriamente ante la secretaría de salud para registrarlos y actualizarlos en el REPS." },
+
+    { "termino": "Portafolio de servicios", "seccion": "4.1",
+      "definicion": "Servicios de salud habilitados y registrados en el REPS por el prestador." },
+
+    { "termino": "Procedimiento", "seccion": "4.1",
+      "definicion": "Conjunto de acciones que se realizan de la misma forma, con una serie común de pasos definidos y una secuencia lógica, realizada en cualquiera de las fases de atención: promoción, prevención, diagnóstico, tratamiento, rehabilitación y paliación.",
+      "uso_en_simulador": "Atención: en el manual un procedimiento es un acto clínico, no un documento. No confundir con el documento que lo describe." },
+
+    { "termino": "Sede del prestador", "seccion": "4.1",
+      "definicion": "Establecimiento abierto por el prestador, en el que se desarrollan las actividades administrativas o asistenciales." },
+
+    { "termino": "Información documentada", "seccion": "4.6",
+      "definicion": "Información escrita y socializada de procesos, procedimientos y actividades en un servicio de salud, que puede estar en medio físico o magnético, ser de cualquier fuente y estar en cualquier formato o idioma.",
+      "uso_en_simulador": "Los dos requisitos reales son que exista por escrito y que esté socializada. La norma no exige código, versión ni aprobación." },
+
+    { "termino": "Proceso", "seccion": "4.6",
+      "definicion": "Conjunto de actividades planificadas, interrelacionadas o que interactúan entre sí de forma secuencial, que transforman elementos de entrada en resultados. Incluye procesos asistenciales y administrativos." },
+
+    { "termino": "Actividad", "seccion": "4.6",
+      "definicion": "Acción, operación o tarea que se ejecuta en un tiempo definido y con un fin específico. Incluye acciones asistenciales y administrativas para abordar o tratar una condición de salud o realizar un diagnóstico clínico." },
+
+    { "termino": "Protocolo de atención", "seccion": "4.6",
+      "definicion": "Secuencia lógica y detallada de un conjunto de actividades, conductas o procedimientos a desarrollar para la atención de una situación específica de salud en un entorno determinado, que permite poca o ninguna variación de las acciones del personal. Incluye los protocolos definidos por el prestador y los establecidos como obligatorios por la normatividad." },
+
+    { "termino": "Guía de práctica clínica", "seccion": "4.6",
+      "definicion": "Documento informativo que incluye recomendaciones dirigidas a optimizar el cuidado del paciente, con base en una revisión sistemática de la evidencia y en la evaluación de los beneficios y daños de distintas opciones de atención." },
+
+    { "termino": "Plan hospitalario para emergencias", "seccion": "4.6",
+      "definicion": "Documento en el que se establecen los objetivos, las acciones y la organización del hospital y sus servicios, así como las responsabilidades del personal frente a situaciones de emergencia o desastre." },
+
+    { "termino": "Carro de paro", "seccion": "4.4",
+      "definicion": "Conjunto de medicamentos, dispositivos médicos y equipos biomédicos utilizados en la reanimación cardio cerebro pulmonar." },
+
+    { "termino": "Reserva", "seccion": "4.5",
+      "definicion": "Medicamentos, dispositivos médicos e insumos requeridos para la prestación de servicios de salud, que se guardan, custodian o preservan en almacenes, bodegas, depósitos, servicios de salud, vehículos, contenedores, neveras, maletines, entre otros." },
+
+    { "termino": "Acciones de formación continua", "seccion": "4.2",
+      "definicion": "Actividades de capacitación del talento humano autorizado para ejercer una ocupación, profesión o especialidad, dirigidas a adquirir, fortalecer o actualizar conocimientos, destrezas, habilidades, aptitudes y actitudes, para su actuación idónea en los servicios ofertados." }
+  ]
+}
