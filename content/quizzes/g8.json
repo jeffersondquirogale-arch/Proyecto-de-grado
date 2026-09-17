@@ -1,0 +1,72 @@
+{
+  "leccion": "g8-listado-maestro",
+  "aprobacion": 0.7,
+  "intentos": 2,
+  "preguntas": [
+    {
+      "id": "g8-p1",
+      "enunciado": "¿Cuándo se actualiza el listado maestro?",
+      "opciones": [
+        { "id": "a", "texto": "En la revisión anual de documentación" },
+        { "id": "b", "texto": "Al aprobar un documento nuevo o una versión nueva" },
+        { "id": "c", "texto": "Antes de cada visita de verificación" },
+        { "id": "d", "texto": "Cuando lo solicite la dirección" }
+      ],
+      "correcta": "b",
+      "explicacion": "Un listado que se actualiza después queda desfasado y da confianza falsa: alguien busca la versión que el listado indica y resulta que no es la vigente.",
+      "fuente": "Vocabulario de práctica"
+    },
+    {
+      "id": "g8-p2",
+      "enunciado": "Se cierra un servicio y sus procedimientos dejan de aplicar. ¿Qué se hace con sus filas en el listado maestro?",
+      "opciones": [
+        { "id": "a", "texto": "Se borran para mantener el listado limpio" },
+        { "id": "b", "texto": "Se marcan como obsoletas y se conservan" },
+        { "id": "c", "texto": "Se trasladan a un listado aparte y se elimina el original" },
+        { "id": "d", "texto": "Se dejan como vigentes hasta la revisión anual" }
+      ],
+      "correcta": "b",
+      "explicacion": "Los registros de años anteriores referencian esos documentos. Si se borra la fila, esos registros quedan sin respaldo documental.",
+      "fuente": "Vocabulario de práctica"
+    },
+    {
+      "id": "g8-p3",
+      "enunciado": "El listado maestro incluye un procedimiento que en realidad nunca se elaboró. ¿Qué riesgo hay?",
+      "opciones": [
+        { "id": "a", "texto": "Ninguno, indica la intención de hacerlo" },
+        { "id": "b", "texto": "El verificador lo pedirá y no existirá" },
+        { "id": "c", "texto": "Se debe marcar como versión 0" },
+        { "id": "d", "texto": "Solo importa si es de un criterio obligatorio" }
+      ],
+      "correcta": "b",
+      "explicacion": "El listado es una declaración de lo que la institución tiene. Prometer un documento inexistente genera el hallazgo por cuenta propia.",
+      "fuente": "Vocabulario de práctica"
+    },
+    {
+      "id": "g8-p4",
+      "enunciado": "¿Cuál de estas situaciones obliga a revisar un documento antes de su fecha programada?",
+      "opciones": [
+        { "id": "a", "texto": "Que hayan pasado seis meses desde la última revisión" },
+        { "id": "b", "texto": "Que cambie una norma que lo sustenta o que se adquiera un equipo nuevo" },
+        { "id": "c", "texto": "Que cambie el logotipo institucional" },
+        { "id": "d", "texto": "Que aumente el número de pacientes atendidos" }
+      ],
+      "correcta": "b",
+      "explicacion": "La revisión por evento se dispara cuando cambia la norma, el equipo o el servicio, cuando ocurre un evento adverso o cuando una visita deja un hallazgo. Revisar no obliga a cambiar: si el documento sigue describiendo bien la operación, se registra que fue revisado y se deja igual.",
+      "fuente": "Vocabulario de práctica"
+    },
+    {
+      "id": "g8-p5",
+      "enunciado": "De todo el módulo de gestión documental, ¿qué exige realmente la Resolución 3100?",
+      "opciones": [
+        { "id": "a", "texto": "Listado maestro, control de cambios y codificación" },
+        { "id": "b", "texto": "Que la información esté escrita y socializada" },
+        { "id": "c", "texto": "Encabezado con tres firmas y versión vigente" },
+        { "id": "d", "texto": "Un documento por cada criterio aplicable" }
+      ],
+      "correcta": "b",
+      "explicacion": "Esos son los dos requisitos de la definición de información documentada. Todo lo demás del módulo es buena práctica: existe porque hace posible demostrar y sostener lo que sí es obligatorio.",
+      "fuente": "Resolución 3100 de 2019, sección 4.6"
+    }
+  ]
+}
