@@ -1,0 +1,72 @@
+{
+  "leccion": "g7-control-de-cambios",
+  "aprobacion": 0.7,
+  "intentos": 2,
+  "preguntas": [
+    {
+      "id": "g7-p1",
+      "enunciado": "Se corrige un error de ortografía en un procedimiento. ¿Sube la versión?",
+      "opciones": [
+        { "id": "a", "texto": "Sí, cualquier modificación exige versión nueva" },
+        { "id": "b", "texto": "No, porque no cambia cómo se ejecuta la actividad" },
+        { "id": "c", "texto": "Solo si el error estaba en la sección de desarrollo" },
+        { "id": "d", "texto": "Sí, pero como versión decimal" }
+      ],
+      "correcta": "b",
+      "explicacion": "La versión sube cuando el cambio afecta cómo se ejecuta la actividad: pasos, responsables, alcance o registros. La ortografía y el formato visual no lo hacen.",
+      "fuente": "Vocabulario de práctica"
+    },
+    {
+      "id": "g7-p2",
+      "enunciado": "¿Qué se hace con la versión anterior de un documento cuando se aprueba una nueva?",
+      "opciones": [
+        { "id": "a", "texto": "Se destruye para evitar confusiones" },
+        { "id": "b", "texto": "Se deja en el punto de uso como referencia" },
+        { "id": "c", "texto": "Se retira del uso y se archiva marcada como obsoleta" },
+        { "id": "d", "texto": "Se conserva vigente durante un periodo de transición" }
+      ],
+      "correcta": "c",
+      "explicacion": "Los registros generados bajo la versión anterior solo se explican con esa versión. Se conserva archivada para consulta histórica, pero ningún ejemplar obsoleto debe quedar en el punto de uso.",
+      "fuente": "Vocabulario de práctica"
+    },
+    {
+      "id": "g7-p3",
+      "enunciado": "En el control de cambios, la descripción dice 'actualización general'. ¿Cuál es el problema?",
+      "opciones": [
+        { "id": "a", "texto": "Ninguno si la fecha y el aprobador están completos" },
+        { "id": "b", "texto": "No permite saber qué cambió ni por qué" },
+        { "id": "c", "texto": "Debe indicarse en inglés y español" },
+        { "id": "d", "texto": "Solo se aceptan descripciones de una línea" }
+      ],
+      "correcta": "b",
+      "explicacion": "El control de cambios es la historia del documento. Si dentro de dos años alguien pregunta por qué cambió una periodicidad, la tabla tiene que poder responderlo.",
+      "fuente": "Vocabulario de práctica"
+    },
+    {
+      "id": "g7-p4",
+      "enunciado": "Se aprueba la versión 3 de un protocolo y se publica, pero no se socializa. ¿Cuál es la consecuencia?",
+      "opciones": [
+        { "id": "a", "texto": "Ninguna: basta con que esté aprobada" },
+        { "id": "b", "texto": "El personal sigue aplicando la versión anterior y el documento deja de reflejar la práctica" },
+        { "id": "c", "texto": "La versión 3 queda anulada automáticamente" },
+        { "id": "d", "texto": "Se puede socializar al año siguiente" }
+      ],
+      "correcta": "b",
+      "explicacion": "Cada versión nueva necesita su propia evidencia de socialización: el acta de la versión 1 no respalda la versión 3. Sin socializar, la práctica y el documento se separan, y la socialización sí hace parte de la definición oficial de información documentada.",
+      "fuente": "Resolución 3100 de 2019, sección 4.6"
+    },
+    {
+      "id": "g7-p5",
+      "enunciado": "Durante la visita, el verificador encuentra pegada en el consultorio una copia impresa de la versión 2, mientras la vigente es la 3. ¿Qué significa?",
+      "opciones": [
+        { "id": "a", "texto": "Nada, si la versión 3 está en el sistema documental" },
+        { "id": "b", "texto": "Que hay un ejemplar obsoleto en el punto de uso" },
+        { "id": "c", "texto": "Que la versión 2 sigue vigente en ese consultorio" },
+        { "id": "d", "texto": "Que falta el listado maestro" }
+      ],
+      "correcta": "b",
+      "explicacion": "Es uno de los hallazgos más comunes. El riesgo es concreto: el personal de ese consultorio está aplicando instrucciones que ya fueron reemplazadas.",
+      "fuente": "Vocabulario de práctica"
+    }
+  ]
+}
