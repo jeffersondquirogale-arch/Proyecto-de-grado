@@ -1,0 +1,110 @@
+---
+id: d2-registro-sanitario
+modulo: dotacion
+orden: 2
+titulo: Registro sanitario, permiso de comercialización y clasificación por riesgo
+criterios: [DOT-03, DOT-04, MED-01, MED-06]
+glosario: []
+requiere: [d1-inventario]
+formulario: inventario-equipos
+tiempo_estimado: 40
+---
+
+## Dos documentos distintos
+
+El numeral 1.5 del manual dice: "registro sanitario para dispositivos médicos o permiso de comercialización para equipos biomédicos de tecnología controlada, cuando lo requiera".
+
+Esa "o" no es un sinónimo. Son dos figuras diferentes del Decreto 4725 de 2005, y elegir la equivocada es un error de fondo en el inventario.
+
+| Documento | A qué aplica |
+|---|---|
+| Registro sanitario | Dispositivos médicos en general |
+| Permiso de comercialización | Equipos biomédicos de tecnología controlada |
+
+Ambos son documentos públicos que expide el INVIMA después de verificar el cumplimiento de requisitos técnico-legales, y facultan a producir, comercializar, importar, exportar y demás.
+
+## Qué es tecnología controlada
+
+Aquí está la parte que más se ignora. El decreto define el equipo biomédico de tecnología controlada como aquel sometido a control especial por estar en alguna de estas situaciones:
+
+**a.** Por su clasificación de alto riesgo y el grado de vulnerabilidad asociado, incluidos los derivados del diseño, fabricación, instalación, manejo y destino previsto.
+
+**b.** Prototipos que conlleven nuevos desarrollos científicos y tecnológicos.
+
+**c.** Los sujetos a control de la oferta mediante estándares de distribución por zonas geográficas.
+
+**d.** **Equipo usado o repotenciado.**
+
+**e.** Los que para su adquisición, instalación y utilización requieren inversión superior a 700 salarios mínimos legales vigentes, estén clasificados IIb o III, y se encuentren bajo los parámetros del artículo 65 de la Ley 715 de 2001.
+
+El literal d es el que más sorprende: **un equipo usado o repotenciado es tecnología controlada por ese solo hecho**, sin importar su clase de riesgo. Si tu IPS compró un equipo repotenciado, ese equipo necesita permiso de comercialización, no registro sanitario.
+
+Y el decreto agrega que el Ministerio puede clasificar como tecnología controlada, por acto administrativo, equipos de clase I y IIa cuando el sector lo requiera.
+
+## Las cuatro clases de riesgo
+
+El decreto las define así:
+
+| Clase | Riesgo | Descripción |
+|---|---|---|
+| I | Bajo | Sujetos a controles generales. No destinados a proteger o mantener la vida ni a un uso de importancia especial en la prevención del deterioro de la salud, y no representan riesgo potencial no razonable de enfermedad o lesión |
+| IIa | Moderado | Sujetos a controles especiales en la fase de fabricación para demostrar seguridad y efectividad |
+| IIb | Alto | Sujetos a controles especiales en el diseño y la fabricación |
+| III | Muy alto | Sujetos a controles especiales; destinados a proteger o mantener la vida, o de importancia sustancial en la prevención del deterioro de la salud, o cuyo uso presenta riesgo potencial de enfermedad o lesión |
+
+## Quién clasifica
+
+El decreto es explícito: **la clasificación la realiza el fabricante**, fundamentada en los riesgos potenciales del uso y el posible fracaso del dispositivo, combinando criterios como duración del contacto con el cuerpo, grado de invasión, y efecto local frente a efecto sistémico.
+
+Es decir, ni la IPS ni el ingeniero biomédico deciden la clase. El dato se toma del registro sanitario o del permiso, y se copia al inventario.
+
+## Cuatro reglas que resuelven dudas
+
+El artículo 6 del decreto establece criterios que sirven cuando el caso no es obvio:
+
+- Si el dispositivo se usa en combinación con otro, cada uno se clasifica por separado
+- Los soportes informáticos que manejan un producto o influyen en su uso quedan en la misma categoría del producto
+- Si no se destina a una parte específica del cuerpo, se clasifica por su utilización más crítica
+- Si aplican varias reglas, **se aplica la que conduzca a la clasificación más elevada**
+
+La última es la más útil: ante la duda entre dos clases, va la más alta.
+
+## Qué se verifica en el inventario
+
+| Verificación | Criterio |
+|---|---|
+| El equipo que requiere registro o permiso lo declara | DOT-03 |
+| El número corresponde a esa marca y modelo | DOT-03 |
+| La clase de riesgo está consignada | DOT-04 |
+| La clase coincide con la del registro | DOT-04 |
+
+Y en el estándar de medicamentos y dispositivos (numeral 11.1.4 - 2) se piden datos adicionales para los dispositivos médicos: descripción, marca, serie cuando aplique, presentación comercial, registro sanitario o permiso **vigente**, clasificación por riesgo, vida útil cuando aplique, lote y fecha de vencimiento.
+
+Ojo con la palabra vigente: ahí sí aparece expresamente.
+
+## Cómo se verifica un registro
+
+El INVIMA tiene consulta pública en línea. Lo que hay que mirar:
+
+1. Que el número exista y esté vigente
+2. Que el titular coincida
+3. Que la marca y el modelo del equipo estén amparados
+4. Qué clase de riesgo declara
+
+El punto 3 es donde aparecen los errores. Un registro ampara marcas y modelos determinados; el del mismo fabricante para otro modelo no sirve.
+
+## Errores frecuentes
+
+| Error | Por qué ocurre |
+|---|---|
+| Poner registro sanitario a un equipo repotenciado | Se desconoce que el equipo usado es tecnología controlada |
+| Copiar el número de la factura sin verificarlo | La factura puede traer el registro de otro producto del proveedor |
+| Asignar la clase de riesgo por criterio propio | Se ignora que la clasifica el fabricante |
+| Registro vencido en el inventario | No se revisa la vigencia periódicamente |
+| Confundir registro del fabricante con el del producto | Son cosas distintas |
+
+## Para llevarte
+
+Registro sanitario para dispositivos médicos; permiso de comercialización para equipos de tecnología controlada, entre los que están los usados y repotenciados.
+
+La clase de riesgo la determina el fabricante y se copia del registro. Ante duda entre dos clases, aplica la más alta.
