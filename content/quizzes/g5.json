@@ -1,0 +1,72 @@
+{
+  "leccion": "g5-glosario-y-definiciones",
+  "aprobacion": 0.7,
+  "intentos": 2,
+  "preguntas": [
+    {
+      "id": "g5-p1",
+      "enunciado": "Un criterio dice que el servicio 'cuenta con' cierto equipo, y el prestador lo tiene en otra sede. ¿Cumple?",
+      "opciones": [
+        { "id": "a", "texto": "Sí, si puede trasladarlo cuando se requiera" },
+        { "id": "b", "texto": "No: 'cuenta con' exige existencia permanente dentro del servicio" },
+        { "id": "c", "texto": "Sí, si ambas sedes son del mismo prestador" },
+        { "id": "d", "texto": "Depende de la complejidad del servicio" }
+      ],
+      "correcta": "b",
+      "explicacion": "El manual define 'cuenta con' como existencia obligatoria y permanente dentro del servicio. La expresión que sí permite ubicarlo fuera es 'disponibilidad'.",
+      "fuente": "Resolución 3100 de 2019, sección 4.1"
+    },
+    {
+      "id": "g5-p2",
+      "enunciado": "Tu documento necesita definir 'procedimiento'. ¿Qué haces?",
+      "opciones": [
+        { "id": "a", "texto": "Escribes una definición propia adaptada a tu institución" },
+        { "id": "b", "texto": "Copias la de un documento de otra IPS" },
+        { "id": "c", "texto": "Transcribes la del manual y citas la sección" },
+        { "id": "d", "texto": "No la defines, porque es un término conocido" }
+      ],
+      "correcta": "c",
+      "explicacion": "Si el manual define un término, esa es la definición que aplica. Adaptarla crea una contradicción entre tu documento y la norma con la que te van a evaluar.",
+      "fuente": "Resolución 3100 de 2019, sección 4.1"
+    },
+    {
+      "id": "g5-p3",
+      "enunciado": "¿Cuál es la diferencia práctica entre 'cuenta con' y 'disponibilidad'?",
+      "opciones": [
+        { "id": "a", "texto": "'Cuenta con' aplica a equipos y 'disponibilidad' a personas" },
+        { "id": "b", "texto": "'Cuenta con' es obligatorio y 'disponibilidad' es opcional" },
+        { "id": "c", "texto": "'Cuenta con' exige que esté dentro del servicio; 'disponibilidad' permite que esté fuera" },
+        { "id": "d", "texto": "'Cuenta con' aplica a baja complejidad y 'disponibilidad' a alta" }
+      ],
+      "correcta": "c",
+      "explicacion": "Ambas exigen existencia obligatoria. La diferencia es la ubicación: 'cuenta con' la fija dentro del servicio, mientras 'disponibilidad' admite que esté fuera si se garantiza permanente disposición y fácil localización.",
+      "fuente": "Resolución 3100 de 2019, sección 4.1"
+    },
+    {
+      "id": "g5-p4",
+      "enunciado": "¿Cuál de estas definiciones está mejor escrita?",
+      "opciones": [
+        { "id": "a", "texto": "Acta de socialización: documento que sirve para socializar" },
+        { "id": "b", "texto": "Acta de socialización: registro escrito de la reunión en la que se dio a conocer un documento al personal que debe aplicarlo" },
+        { "id": "c", "texto": "Acta de socialización: herramienta fundamental del sistema de calidad" },
+        { "id": "d", "texto": "Acta de socialización: evidencia requerida por la normatividad vigente" }
+      ],
+      "correcta": "b",
+      "explicacion": "Define lo que es, de forma específica y sin usar el término dentro de su propia definición. La opción a es circular, y la c y la d dicen para qué sirve sin decir qué es.",
+      "fuente": "Vocabulario de práctica"
+    },
+    {
+      "id": "g5-p5",
+      "enunciado": "Una IPS copia un glosario de veinte términos de otro documento. ¿Cuál es el riesgo principal?",
+      "opciones": [
+        { "id": "a", "texto": "Infringir derechos de autor" },
+        { "id": "b", "texto": "Incluir definiciones que contradicen el manual o no aplican a su operación" },
+        { "id": "c", "texto": "Que el documento quede muy extenso" },
+        { "id": "d", "texto": "Que el verificador no acepte glosarios externos" }
+      ],
+      "correcta": "b",
+      "explicacion": "El problema no es el origen sino el contenido: definiciones que chocan con las oficiales o que describen servicios y equipos que la institución no tiene. Un glosario de tres términos útiles vale más que uno de veinte copiados.",
+      "fuente": "Vocabulario de práctica"
+    }
+  ]
+}
