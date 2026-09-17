@@ -1,0 +1,49 @@
+{
+  "id": "hoja-de-vida",
+  "titulo": "Hoja de vida del equipo biomédico",
+  "leccion": "D4",
+  "tipo": "documento",
+  "descripcion": "Un documento por equipo. Registra su identificación y el historial de intervenciones.",
+  "secciones": [
+    {
+      "id": "identificacion",
+      "titulo": "Identificación",
+      "campos": [
+        { "id": "equipo_ref", "etiqueta": "Equipo del inventario", "tipo": "referencia", "origen": "inventario-equipos", "obligatorio": true, "prueba": ["DOT-08"] },
+        { "id": "serie", "etiqueta": "Serie", "tipo": "texto", "obligatorio": true, "prueba": ["DOT-08", "BP-02"] }
+      ]
+    },
+    {
+      "id": "adquisicion",
+      "titulo": "Adquisición",
+      "nota": "No exigido por la Resolución 3100. Se documenta como buena práctica.",
+      "campos": [
+        { "id": "forma_adquisicion", "etiqueta": "Forma de adquisición", "tipo": "opcion", "opciones": ["compra", "comodato", "arriendo", "donación"], "obligatorio": false, "prueba": ["BP-02"] },
+        { "id": "soporte_numero", "etiqueta": "Número de factura o contrato", "tipo": "texto", "obligatorio": false, "prueba": ["BP-02"] },
+        { "id": "fecha_adquisicion", "etiqueta": "Fecha", "tipo": "fecha", "obligatorio": false, "prueba": ["BP-02"] }
+      ]
+    },
+    {
+      "id": "mantenimiento",
+      "titulo": "Historial de mantenimientos",
+      "tipo": "lista",
+      "campos": [
+        { "id": "fecha", "etiqueta": "Fecha", "tipo": "fecha", "obligatorio": true, "prueba": ["DOT-08"] },
+        { "id": "tipo", "etiqueta": "Tipo", "tipo": "opcion", "opciones": ["preventivo", "correctivo"], "obligatorio": true, "prueba": ["DOT-08"] },
+        { "id": "descripcion", "etiqueta": "Actividades realizadas", "tipo": "texto_largo", "obligatorio": true, "prueba": ["DOT-08"] },
+        { "id": "ejecutor_nombre", "etiqueta": "Quién ejecutó", "tipo": "texto", "obligatorio": true, "prueba": ["DOT-12"] },
+        { "id": "ejecutor_formacion", "etiqueta": "Formación de quien ejecutó", "tipo": "opcion", "opciones": ["profesional", "tecnólogo", "técnico", "sin formación en áreas relacionadas"], "obligatorio": true, "prueba": ["DOT-12"] }
+      ]
+    },
+    {
+      "id": "verificacion",
+      "titulo": "Calibración o verificación",
+      "campos": [
+        { "id": "fabricante_exige", "etiqueta": "¿El manual del fabricante exige calibración o verificación?", "tipo": "booleano", "obligatorio": true, "prueba": ["DOT-07"] },
+        { "id": "periodicidad_fabricante", "etiqueta": "Periodicidad indicada por el fabricante (meses)", "tipo": "numero", "obligatorio_si": "fabricante_exige == true", "prueba": ["DOT-07"] },
+        { "id": "fecha_ultima", "etiqueta": "Fecha de la última calibración o verificación", "tipo": "fecha", "obligatorio_si": "fabricante_exige == true", "prueba": ["DOT-07"] },
+        { "id": "laboratorio_acreditado", "etiqueta": "¿Laboratorio acreditado?", "tipo": "booleano", "obligatorio": false, "prueba": ["BP-05"] }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "inventario-equipos",
+  "titulo": "Registro de la relación de equipos biomédicos",
+  "leccion": "D1",
+  "tipo": "lista",
+  "descripcion": "Una fila por equipo biomédico del servicio.",
+  "campos": [
+    { "id": "nombre",        "etiqueta": "Nombre del equipo", "tipo": "texto", "obligatorio": true, "prueba": ["DOT-01", "DOT-02"] },
+    { "id": "marca",         "etiqueta": "Marca", "tipo": "texto", "obligatorio": true, "prueba": ["DOT-02"] },
+    { "id": "modelo",        "etiqueta": "Modelo", "tipo": "texto", "obligatorio": true, "prueba": ["DOT-02"] },
+    { "id": "serie",         "etiqueta": "Serie", "tipo": "texto", "obligatorio": true, "prueba": ["DOT-02"] },
+    { "id": "requiere_registro", "etiqueta": "¿Requiere registro sanitario o permiso de comercialización?", "tipo": "booleano", "obligatorio": true, "prueba": ["DOT-03"] },
+    { "id": "registro_sanitario", "etiqueta": "Registro sanitario o permiso", "tipo": "texto", "obligatorio_si": "requiere_registro == true", "prueba": ["DOT-03"] },
+    { "id": "clase_riesgo",  "etiqueta": "Clasificación por riesgo", "tipo": "opcion", "opciones": ["I", "IIa", "IIb", "III", "no aplica"], "obligatorio": true, "prueba": ["DOT-04"] },
+    { "id": "servicio",      "etiqueta": "Servicio donde se usa", "tipo": "opcion_servicio", "obligatorio": true, "prueba": ["DOT-10", "DOT-13"] },
+    { "id": "codigo_interno","etiqueta": "Código interno", "tipo": "texto", "obligatorio": false, "prueba": ["BP-01"] },
+    { "id": "ubicacion",     "etiqueta": "Ubicación", "tipo": "texto", "obligatorio": false, "prueba": ["BP-01"] }
+  ]
+}

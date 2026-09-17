@@ -1,0 +1,29 @@
+{
+  "id": "programa-mantenimiento",
+  "titulo": "Programa de mantenimiento preventivo",
+  "leccion": "D7",
+  "tipo": "documento",
+  "descripcion": "Define la periodicidad de cada equipo y la fuente de esa periodicidad.",
+  "secciones": [
+    {
+      "id": "generalidades",
+      "titulo": "Generalidades",
+      "campos": [
+        { "id": "vigencia", "etiqueta": "Periodo que cubre", "tipo": "texto", "obligatorio": true, "prueba": ["DOT-05"] },
+        { "id": "responsable", "etiqueta": "Responsable del programa", "tipo": "texto", "obligatorio": true, "prueba": ["DOT-05"] },
+        { "id": "ejecucion", "etiqueta": "Forma de ejecución", "tipo": "opcion", "opciones": ["propia", "contrato o convenio con tercero"], "obligatorio": true, "prueba": ["DOT-12"] }
+      ]
+    },
+    {
+      "id": "cronograma",
+      "titulo": "Cronograma por equipo",
+      "tipo": "lista",
+      "campos": [
+        { "id": "equipo_ref", "etiqueta": "Equipo del inventario", "tipo": "referencia", "origen": "inventario-equipos", "obligatorio": true, "prueba": ["DOT-05"] },
+        { "id": "periodicidad_meses", "etiqueta": "Periodicidad (meses)", "tipo": "numero", "obligatorio": true, "prueba": ["DOT-06"] },
+        { "id": "fuente_periodicidad", "etiqueta": "Fuente de la periodicidad", "tipo": "opcion", "opciones": ["recomendación del fabricante", "protocolo propio del prestador"], "obligatorio": true, "prueba": ["DOT-06"] },
+        { "id": "justificacion_protocolo", "etiqueta": "Justificación del protocolo propio", "tipo": "texto_largo", "obligatorio_si": "fuente_periodicidad == 'protocolo propio del prestador'", "prueba": ["DOT-06"] }
+      ]
+    }
+  ]
+}
