@@ -1,0 +1,37 @@
+{
+  "id": "caso-02-consultorio",
+  "titulo": "IPS Salud Norte · consultorio de medicina general y toma de muestras",
+  "nivel": "intermedio",
+  "prestador": {
+    "nombre": "IPS Salud Norte S.A.S.",
+    "tipo": "IPS",
+    "complejidad": "baja",
+    "modalidad": "intramural",
+    "servicios": ["consulta externa medicina general", "enfermería", "toma de muestras de laboratorio clínico"]
+  },
+  "manuales": {
+    "EQ-001": { "equipo": "Monitor de signos vitales", "periodicidad_mantenimiento_meses": 6, "exige_verificacion": false },
+    "EQ-002": { "equipo": "Tensiómetro digital", "periodicidad_mantenimiento_meses": 12, "exige_verificacion": true, "periodicidad_verificacion_meses": 12 },
+    "EQ-003": { "equipo": "Centrífuga de laboratorio", "periodicidad_mantenimiento_meses": 6, "exige_verificacion": false }
+  },
+  "soportes": {
+    "FAC-4471": { "tipo": "factura", "equipo": "Monitor de signos vitales", "serie": "SN-44172" }
+  },
+  "procesos_prioritarios": {
+    "equipos_requeridos": ["Monitor de signos vitales", "Tensiómetro digital", "Centrífuga de laboratorio", "Báscula"]
+  },
+  "clave_respuestas": {
+    "hallazgos_esperados": [
+      { "criterio": "DOT-05", "motivo": "La centrífuga EQ-003 está en el inventario pero no en el cronograma" },
+      { "criterio": "DOT-06", "motivo": "El monitor declara 12 meses y el manual indica 6" },
+      { "criterio": "DOT-10", "motivo": "Procesos prioritarios requiere báscula y no está en el inventario" },
+      { "criterio": "DOT-12", "motivo": "Un mantenimiento fue ejecutado por alguien sin formación en áreas relacionadas" }
+    ],
+    "advertencias_esperadas": [
+      { "criterio": "BP-02", "motivo": "La serie de la hoja de vida no coincide con la de la factura" }
+    ],
+    "no_debe_reportar": [
+      { "criterio": "DOT-07", "motivo": "El monitor no exige verificación según su manual" }
+    ]
+  }
+}

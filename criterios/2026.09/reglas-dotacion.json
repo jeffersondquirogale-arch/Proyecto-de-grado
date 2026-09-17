@@ -5,63 +5,116 @@
     "base_criterios": "criterios/2026.09/dotacion.json"
   },
   "reglas": [
-    { "criterio": "DOT-01", "tipo": "campo_requerido", "objetivo": "inventario-equipos", "minimo_filas": 1,
-      "mensaje": "No existe registro de equipos biomédicos." },
-
-    { "criterio": "DOT-02", "tipo": "campo_requerido", "objetivo": "inventario-equipos[].nombre,marca,modelo,serie",
-      "mensaje": "Falta {campo} en el equipo {fila}. El numeral 11.1.3-1 exige nombre, marca, modelo y serie." },
-
-    { "criterio": "DOT-03", "tipo": "condicional", "objetivo": "inventario-equipos[]",
-      "cuando": "requiere_registro == true", "entonces_requerido": "registro_sanitario",
-      "mensaje": "El equipo {fila} requiere registro sanitario o permiso y no lo declara." },
-
-    { "criterio": "DOT-04", "tipo": "campo_requerido", "objetivo": "inventario-equipos[].clase_riesgo",
-      "mensaje": "Falta la clasificación por riesgo del equipo {fila}." },
-
-    { "criterio": "DOT-05", "tipo": "campo_requerido", "objetivo": "programa-mantenimiento.generalidades.vigencia,responsable",
-      "mensaje": "El programa de mantenimiento no declara {campo}." },
-
-    { "criterio": "DOT-05", "tipo": "cobertura", "origen": "inventario-equipos[].id", "destino": "programa-mantenimiento.cronograma[].equipo_ref",
-      "mensaje": "El equipo {faltante} está en el inventario pero no en el cronograma de mantenimiento." },
-
-    { "criterio": "DOT-06", "tipo": "coherencia_fabricante",
+    {
+      "criterio": "DOT-01",
+      "tipo": "campo_requerido",
+      "objetivo": "inventario-equipos",
+      "minimo_filas": 1,
+      "mensaje": "No existe registro de equipos biomédicos."
+    },
+    {
+      "criterio": "DOT-02",
+      "tipo": "campo_requerido",
+      "objetivo": "inventario-equipos[].nombre,marca,modelo,serie",
+      "mensaje": "Falta {campo} en el equipo {fila}. El numeral 11.1.3-1 exige nombre, marca, modelo y serie."
+    },
+    {
+      "criterio": "DOT-03",
+      "tipo": "condicional",
+      "objetivo": "inventario-equipos[]",
+      "cuando": "requiere_registro == true",
+      "entonces_requerido": "registro_sanitario",
+      "mensaje": "El equipo {fila} requiere registro sanitario o permiso y no lo declara."
+    },
+    {
+      "criterio": "DOT-04",
+      "tipo": "campo_requerido",
+      "objetivo": "inventario-equipos[].clase_riesgo",
+      "mensaje": "Falta la clasificación por riesgo del equipo {fila}."
+    },
+    {
+      "criterio": "DOT-05",
+      "tipo": "campo_requerido",
+      "objetivo": "programa-mantenimiento.generalidades.vigencia,responsable",
+      "mensaje": "El programa de mantenimiento no declara {campo}."
+    },
+    {
+      "criterio": "DOT-05",
+      "tipo": "cobertura",
+      "origen": "inventario-equipos[].id",
+      "destino": "programa-mantenimiento.cronograma[].equipo_ref",
+      "mensaje": "El equipo {faltante} está en el inventario pero no en el cronograma de mantenimiento."
+    },
+    {
+      "criterio": "DOT-06",
+      "tipo": "coherencia_fabricante",
       "campo": "programa-mantenimiento.cronograma[].periodicidad_meses",
       "referencia": "caso.manuales[equipo_ref].periodicidad_mantenimiento_meses",
       "cuando": "fuente_periodicidad == 'recomendación del fabricante'",
-      "mensaje": "Para {equipo} se declaró una periodicidad de {valor} meses, pero el manual del fabricante indica {referencia}." },
-
-    { "criterio": "DOT-06", "tipo": "condicional", "objetivo": "programa-mantenimiento.cronograma[]",
-      "cuando": "fuente_periodicidad == 'protocolo propio del prestador'", "entonces_requerido": "justificacion_protocolo",
-      "mensaje": "Se declaró protocolo propio para {equipo} sin justificarlo. El numeral 2.1 solo lo admite cuando el fabricante no define la periodicidad." },
-
-    { "criterio": "DOT-07", "tipo": "condicional", "objetivo": "hoja-de-vida.verificacion",
-      "cuando": "fabricante_exige == true", "entonces_requerido": "fecha_ultima,periodicidad_fabricante",
-      "mensaje": "El fabricante exige calibración o verificación y no se evidencia." },
-
-    { "criterio": "DOT-07", "tipo": "vigencia", "campo": "hoja-de-vida.verificacion.fecha_ultima",
+      "mensaje": "Para {equipo} se declaró una periodicidad de {valor} meses, pero el manual del fabricante indica {referencia}."
+    },
+    {
+      "criterio": "DOT-06",
+      "tipo": "condicional",
+      "objetivo": "programa-mantenimiento.cronograma[]",
+      "cuando": "fuente_periodicidad == 'protocolo propio del prestador'",
+      "entonces_requerido": "justificacion_protocolo",
+      "mensaje": "Se declaró protocolo propio para {equipo} sin justificarlo. El numeral 2.1 solo lo admite cuando el fabricante no define la periodicidad."
+    },
+    {
+      "criterio": "DOT-07",
+      "tipo": "condicional",
+      "objetivo": "hoja-de-vida.verificacion",
+      "cuando": "fabricante_exige == true",
+      "entonces_requerido": "fecha_ultima,periodicidad_fabricante",
+      "mensaje": "El fabricante exige calibración o verificación y no se evidencia."
+    },
+    {
+      "criterio": "DOT-07",
+      "tipo": "vigencia",
+      "campo": "hoja-de-vida.verificacion.fecha_ultima",
       "periodicidad": "hoja-de-vida.verificacion.periodicidad_fabricante",
       "cuando": "fabricante_exige == true",
-      "mensaje": "La última calibración fue el {valor} y la periodicidad del fabricante es de {periodicidad} meses: está vencida." },
-
-    { "criterio": "DOT-08", "tipo": "campo_requerido", "objetivo": "hoja-de-vida.mantenimiento", "minimo_filas": 1,
-      "mensaje": "La hoja de vida no registra mantenimientos. El numeral 2.2 los exige." },
-
-    { "criterio": "DOT-12", "tipo": "valor_prohibido", "campo": "hoja-de-vida.mantenimiento[].ejecutor_formacion",
-      "prohibido": ["sin formación en áreas relacionadas"],
-      "mensaje": "El mantenimiento del {fecha} lo ejecutó alguien sin formación en áreas relacionadas. El numeral 11.1.3-6 lo exige." },
-
-    { "criterio": "DOT-10", "tipo": "cobertura", "origen": "caso.procesos_prioritarios.equipos_requeridos", "destino": "inventario-equipos[].nombre",
-      "mensaje": "El procedimiento documentado requiere {faltante}, que no aparece en el inventario." },
-
-    { "criterio": "BP-02", "tipo": "coincidencia",
+      "mensaje": "La última calibración fue el {valor} y la periodicidad del fabricante es de {periodicidad} meses: está vencida."
+    },
+    {
+      "criterio": "DOT-08",
+      "tipo": "campo_requerido",
+      "objetivo": "hoja-de-vida.mantenimiento",
+      "minimo_filas": 1,
+      "mensaje": "La hoja de vida no registra mantenimientos. El numeral 2.2 los exige."
+    },
+    {
+      "criterio": "DOT-12",
+      "tipo": "valor_prohibido",
+      "campo": "hoja-de-vida.mantenimiento[].ejecutor_formacion",
+      "prohibido": [
+        "sin formación en áreas relacionadas"
+      ],
+      "mensaje": "El mantenimiento del {fecha} lo ejecutó alguien sin formación en áreas relacionadas. El numeral 11.1.3-6 lo exige."
+    },
+    {
+      "criterio": "DOT-10",
+      "tipo": "cobertura",
+      "origen": "caso.procesos_prioritarios.equipos_requeridos",
+      "destino": "inventario-equipos[].nombre",
+      "mensaje": "El procedimiento documentado requiere {faltante}, que no aparece en el inventario."
+    },
+    {
+      "criterio": "BP-02",
+      "tipo": "coincidencia",
       "campo_a": "hoja-de-vida.identificacion.serie",
-      "campo_b": "caso.soportes[hoja-de-vida.adquisicion.soporte_numero].serie",
+      "campo_b": "caso.soportes.FAC-4471.serie",
       "cuando": "hoja-de-vida.adquisicion.soporte_numero != null",
       "nivel": "advertencia",
-      "mensaje": "La serie de la hoja de vida ({valor_a}) no coincide con la del soporte de adquisición ({valor_b}). No es hallazgo de habilitación, pero indica un problema de identificación del equipo." },
-
-    { "criterio": "BP-01", "tipo": "campo_requerido", "objetivo": "inventario-equipos[].codigo_interno,ubicacion",
+      "mensaje": "La serie de la hoja de vida ({valor_a}) no coincide con la del soporte de adquisición ({valor_b}). No es hallazgo de habilitación, pero indica un problema de identificación del equipo."
+    },
+    {
+      "criterio": "BP-01",
+      "tipo": "campo_requerido",
+      "objetivo": "inventario-equipos[].codigo_interno,ubicacion",
       "nivel": "advertencia",
-      "mensaje": "El equipo {fila} no tiene {campo}. No lo exige la norma, pero facilita la trazabilidad." }
+      "mensaje": "El equipo {fila} no tiene {campo}. No lo exige la norma, pero facilita la trazabilidad."
+    }
   ]
 }
