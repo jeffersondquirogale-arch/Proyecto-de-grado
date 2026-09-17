@@ -1,0 +1,72 @@
+{
+  "leccion": "g2-tipos-de-documento",
+  "aprobacion": 0.7,
+  "intentos": 2,
+  "preguntas": [
+    {
+      "id": "g2-p1",
+      "enunciado": "¿Cuál de estos es un procedimiento según la definición del manual?",
+      "opciones": [
+        { "id": "a", "texto": "El documento titulado 'Procedimiento de toma de muestras'" },
+        { "id": "b", "texto": "La toma de una muestra venosa a un paciente" },
+        { "id": "c", "texto": "El listado maestro de documentos del servicio" },
+        { "id": "d", "texto": "El formato de registro de muestras tomadas" }
+      ],
+      "correcta": "b",
+      "explicacion": "El manual define procedimiento como un conjunto de acciones realizadas en alguna fase de la atención. Es un acto clínico, no un documento.",
+      "fuente": "Resolución 3100 de 2019, sección 4.1"
+    },
+    {
+      "id": "g2-p2",
+      "enunciado": "¿Cuál es la diferencia principal entre un protocolo de atención y una guía de práctica clínica?",
+      "opciones": [
+        { "id": "a", "texto": "El protocolo es obligatorio y la guía es opcional" },
+        { "id": "b", "texto": "El protocolo permite poca o ninguna variación; la guía recomienda con base en evidencia" },
+        { "id": "c", "texto": "El protocolo lo emite el Ministerio y la guía el prestador" },
+        { "id": "d", "texto": "El protocolo es para enfermería y la guía para medicina" }
+      ],
+      "correcta": "b",
+      "explicacion": "El manual describe el protocolo como una secuencia que permite poca o ninguna variación, y la guía como un documento informativo con recomendaciones basadas en revisión sistemática de la evidencia. La diferencia es el margen de decisión, no quién lo emite.",
+      "fuente": "Resolución 3100 de 2019, sección 4.6"
+    },
+    {
+      "id": "g2-p3",
+      "enunciado": "Durante una visita, el verificador quiere comprobar que se realiza la limpieza diaria del área. ¿Qué le sirve como evidencia?",
+      "opciones": [
+        { "id": "a", "texto": "El formato de control de limpieza, en blanco" },
+        { "id": "b", "texto": "El formato de control de limpieza diligenciado y firmado" },
+        { "id": "c", "texto": "El listado maestro donde aparece el formato" },
+        { "id": "d", "texto": "El procedimiento documentado de limpieza" }
+      ],
+      "correcta": "b",
+      "explicacion": "El formato en blanco demuestra que existe la intención; el registro diligenciado demuestra que la actividad ocurrió. El verificador pide registros.",
+      "fuente": "Vocabulario de práctica"
+    },
+    {
+      "id": "g2-p4",
+      "enunciado": "Ordena de lo más general a lo más específico.",
+      "opciones": [
+        { "id": "a", "texto": "Actividad, procedimiento, proceso" },
+        { "id": "b", "texto": "Proceso, procedimiento, actividad" },
+        { "id": "c", "texto": "Procedimiento, proceso, actividad" },
+        { "id": "d", "texto": "Proceso, actividad, procedimiento" }
+      ],
+      "correcta": "b",
+      "explicacion": "Un proceso contiene procedimientos y un procedimiento contiene actividades. Por ejemplo: atención de consulta externa, toma de muestra venosa, verificar la identidad del paciente.",
+      "fuente": "Resolución 3100 de 2019, secciones 4.1 y 4.6"
+    },
+    {
+      "id": "g2-p5",
+      "enunciado": "Una IPS creó 47 documentos, uno por cada criterio del manual que le aplica. ¿Cuál es el problema?",
+      "opciones": [
+        { "id": "a", "texto": "Ninguno: es la forma correcta de organizarse" },
+        { "id": "b", "texto": "La norma prohíbe tener más de un documento por estándar" },
+        { "id": "c", "texto": "Genera documentación que nadie mantiene; un documento puede cubrir varios criterios" },
+        { "id": "d", "texto": "Los documentos deben agruparse por servicio, no por criterio" }
+      ],
+      "correcta": "c",
+      "explicacion": "La norma no dice cómo organizar los archivos: exige que ciertos procesos, procedimientos y actividades estén escritos y socializados. Un solo documento bien hecho puede responder a varios criterios, y es más fácil de mantener actualizado y socializado.",
+      "fuente": "Resolución 3100 de 2019, sección 4.6"
+    }
+  ]
+}
