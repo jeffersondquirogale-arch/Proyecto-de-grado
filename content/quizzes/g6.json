@@ -1,0 +1,72 @@
+{
+  "leccion": "g6-como-se-escribe",
+  "aprobacion": 0.7,
+  "intentos": 2,
+  "preguntas": [
+    {
+      "id": "g6-p1",
+      "enunciado": "¿Por qué los responsables se indican por rol y no por nombre?",
+      "opciones": [
+        { "id": "a", "texto": "Por protección de datos personales" },
+        { "id": "b", "texto": "Porque las personas rotan y el documento quedaría desactualizado" },
+        { "id": "c", "texto": "Porque la norma prohíbe nombres en documentos" },
+        { "id": "d", "texto": "Para que cualquiera pueda hacer la tarea" }
+      ],
+      "correcta": "b",
+      "explicacion": "Los roles permanecen aunque cambien las personas. Un documento con nombres propios caduca el día en que alguien renuncia.",
+      "fuente": "Vocabulario de práctica"
+    },
+    {
+      "id": "g6-p2",
+      "enunciado": "Un procedimiento lista en la sección de registros un formato que en la práctica nadie diligencia. ¿Qué pasa en la visita?",
+      "opciones": [
+        { "id": "a", "texto": "Nada, mientras el procedimiento esté aprobado" },
+        { "id": "b", "texto": "El verificador pedirá ese registro y su ausencia será un hallazgo" },
+        { "id": "c", "texto": "Se solicita eliminar el formato del listado maestro" },
+        { "id": "d", "texto": "Solo importa si el formato es de un criterio obligatorio" }
+      ],
+      "correcta": "b",
+      "explicacion": "El verificador lee el procedimiento, identifica qué registros debería generar y los pide. El propio documento señala el incumplimiento. Por eso no se listan registros que no se van a generar.",
+      "fuente": "Vocabulario de práctica"
+    },
+    {
+      "id": "g6-p3",
+      "enunciado": "¿Cuál es un objetivo bien redactado para un procedimiento de mantenimiento?",
+      "opciones": [
+        { "id": "a", "texto": "Dar cumplimiento a la Resolución 3100 de 2019" },
+        { "id": "b", "texto": "Establecer las actividades para el mantenimiento preventivo de los equipos biomédicos, garantizando su funcionamiento seguro" },
+        { "id": "c", "texto": "Mejorar la calidad de la atención en salud" },
+        { "id": "d", "texto": "Cumplir con los estándares del sistema de gestión" }
+      ],
+      "correcta": "b",
+      "explicacion": "El objetivo dice qué logra el procedimiento en la operación. Citar la norma explica por qué se escribió, y las frases genéricas no describen nada en particular.",
+      "fuente": "Vocabulario de práctica"
+    },
+    {
+      "id": "g6-p4",
+      "enunciado": "El documento describe una secuencia detallada e ideal; el personal hace las cosas de otra forma más simple. ¿Cuál es el mejor camino?",
+      "opciones": [
+        { "id": "a", "texto": "Mantener el documento y capacitar hasta que se cumpla" },
+        { "id": "b", "texto": "Ajustar el documento para que describa lo que realmente ocurre, si es seguro" },
+        { "id": "c", "texto": "Dejar ambos documentos, el ideal y el real" },
+        { "id": "d", "texto": "Eliminar el documento" }
+      ],
+      "correcta": "b",
+      "explicacion": "Un documento que describe una operación que no ocurre falla también en la socialización: el personal no reconoce como propio lo que ahí dice. Es preferible un documento modesto que se cumple. Si la práctica real no es segura, entonces sí hay que corregir la práctica.",
+      "fuente": "Vocabulario de práctica"
+    },
+    {
+      "id": "g6-p5",
+      "enunciado": "¿Cuál es la mejor prueba de que la sección de desarrollo está bien escrita?",
+      "opciones": [
+        { "id": "a", "texto": "Que tenga al menos diez pasos" },
+        { "id": "b", "texto": "Que esté aprobada por la dirección" },
+        { "id": "c", "texto": "Que alguien nuevo pueda ejecutar la actividad leyendo solo el documento" },
+        { "id": "d", "texto": "Que cite los numerales de la norma en cada paso" }
+      ],
+      "correcta": "c",
+      "explicacion": "Si el lector necesita que alguien le explique, falta información. El número de pasos y la aprobación no dicen nada sobre la claridad del contenido.",
+      "fuente": "Vocabulario de práctica"
+    }
+  ]
+}
