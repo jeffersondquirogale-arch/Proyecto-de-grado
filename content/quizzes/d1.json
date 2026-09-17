@@ -1,0 +1,91 @@
+{
+  "leccion": "d1-inventario",
+  "aprobacion": 0.7,
+  "intentos": 2,
+  "preguntas": [
+    {
+      "id": "d1-p1",
+      "criterio": "DOT-02",
+      "enunciado": "¿Cuáles son los datos que el numeral exige para cada equipo del registro?",
+      "opciones": [
+        { "id": "a", "texto": "Nombre, marca, modelo, serie, código interno y ubicación" },
+        { "id": "b", "texto": "Nombre, marca, modelo, serie, registro sanitario cuando lo requiera y clasificación por riesgo cuando lo requiera" },
+        { "id": "c", "texto": "Nombre, marca, modelo, serie, fecha de adquisición y proveedor" },
+        { "id": "d", "texto": "Nombre, marca, modelo, serie, valor y estado del equipo" }
+      ],
+      "correcta": "b",
+      "explicacion": "El numeral lista seis datos, dos de ellos condicionales. El código interno y la ubicación son buena práctica, no exigencia.",
+      "fuente": "Resolución 3100 de 2019, numeral 11.1.3 - 1"
+    },
+    {
+      "id": "d1-p2",
+      "criterio": "DOT-10",
+      "enunciado": "El protocolo de toma de muestras de la IPS menciona el uso de una centrífuga, pero el inventario no la incluye. ¿Hay hallazgo?",
+      "opciones": [
+        { "id": "a", "texto": "No, porque la centrífuga no está en la lista de equipos obligatorios del manual" },
+        { "id": "b", "texto": "Sí, porque la dotación debe concordar con lo definido en procesos prioritarios" },
+        { "id": "c", "texto": "Solo si el servicio es de alta complejidad" },
+        { "id": "d", "texto": "No, mientras el equipo exista físicamente" }
+      ],
+      "correcta": "b",
+      "explicacion": "El numeral 4 remite a lo que el propio prestador documentó. No hay una lista oficial de equipos por servicio: la lista la escribió la institución en procesos prioritarios, y contra eso se mide el inventario.",
+      "fuente": "Resolución 3100 de 2019, numeral 11.1.3 - 4"
+    },
+    {
+      "id": "d1-p3",
+      "criterio": "DOT-03",
+      "enunciado": "Un monitor de signos vitales aparece en el inventario con el número de registro sanitario de otro modelo del mismo fabricante. ¿Qué ocurre?",
+      "opciones": [
+        { "id": "a", "texto": "Es válido, porque el fabricante es el mismo" },
+        { "id": "b", "texto": "Es válido si el modelo es de la misma línea" },
+        { "id": "c", "texto": "No es válido: el registro ampara marcas y modelos determinados" },
+        { "id": "d", "texto": "Es válido mientras el registro esté vigente" }
+      ],
+      "correcta": "c",
+      "explicacion": "El registro sanitario ampara productos específicos. Es un error frecuente al copiar el número desde una factura o desde otro equipo de la misma marca.",
+      "fuente": "Resolución 3100 de 2019, numeral 11.1.3 - 1.5; Decreto 4725 de 2005"
+    },
+    {
+      "id": "d1-p4",
+      "criterio": "DOT-11",
+      "enunciado": "Un servicio atiende cuarenta pacientes diarios y cuenta con un solo tensiómetro. ¿Cumple el criterio de suficiencia?",
+      "opciones": [
+        { "id": "a", "texto": "Sí, porque tiene al menos un equipo de cada tipo" },
+        { "id": "b", "texto": "No necesariamente: la suficiencia se relaciona con la frecuencia de uso" },
+        { "id": "c", "texto": "Sí, si el equipo funciona correctamente" },
+        { "id": "d", "texto": "No, el manual exige mínimo dos equipos por servicio" }
+      ],
+      "correcta": "b",
+      "explicacion": "El numeral 5 relaciona la suficiencia con la frecuencia de uso, incluidos los tiempos de esterilización cuando aplique. No fija cantidades: exige que la dotación alcance para la operación real.",
+      "fuente": "Resolución 3100 de 2019, numeral 11.1.3 - 5"
+    },
+    {
+      "id": "d1-p5",
+      "criterio": "DOT-04",
+      "enunciado": "¿De dónde se toma la clasificación por riesgo de un dispositivo médico?",
+      "opciones": [
+        { "id": "a", "texto": "Se asigna según el criterio del ingeniero biomédico" },
+        { "id": "b", "texto": "Se determina por el precio y la complejidad del equipo" },
+        { "id": "c", "texto": "Está consignada en el registro sanitario o permiso de comercialización" },
+        { "id": "d", "texto": "La define la Secretaría de Salud en la visita" }
+      ],
+      "correcta": "c",
+      "explicacion": "El manual indica expresamente que la clasificación por riesgo es información consignada en el registro sanitario o permiso de comercialización. No se decide: se copia de ahí.",
+      "fuente": "Resolución 3100 de 2019, numeral 11.1.4 - 2.6"
+    },
+    {
+      "id": "d1-p6",
+      "criterio": "BP-01",
+      "enunciado": "El inventario no incluye la ubicación de los equipos. ¿Qué pasa en la evaluación?",
+      "opciones": [
+        { "id": "a", "texto": "Genera hallazgo por incumplimiento del numeral 1" },
+        { "id": "b", "texto": "Genera advertencia: es buena práctica, no exigencia" },
+        { "id": "c", "texto": "Invalida el inventario completo" },
+        { "id": "d", "texto": "No se reporta de ninguna forma" }
+      ],
+      "correcta": "b",
+      "explicacion": "El numeral no exige ubicación ni código interno. Se recomiendan porque sin ellos el inventario sirve para contar equipos pero no para encontrarlos durante una visita.",
+      "fuente": "Resolución 3100 de 2019, numeral 11.1.3 - 1"
+    }
+  ]
+}
