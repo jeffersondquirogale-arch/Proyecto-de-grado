@@ -1,0 +1,110 @@
+---
+id: d4-hoja-de-vida
+modulo: dotacion
+orden: 4
+titulo: La hoja de vida del equipo biomédico
+criterios: [DOT-08, DOT-12, BP-02]
+glosario: []
+requiere: [d3-ficha-tecnica]
+formulario: hoja-de-vida
+tiempo_estimado: 45
+---
+
+## Lo que dice la norma, completo
+
+El numeral 2.2 es breve:
+
+> Hoja(s) de vida del(los) equipo(s) biomédico(s), con los registros de los mantenimientos preventivos y correctivos, según corresponda.
+
+Eso es todo. Dos exigencias: que exista una hoja de vida por equipo, y que contenga los registros de mantenimientos.
+
+Nada sobre datos de adquisición, proveedor, garantía, valor, ubicación o formato. Todo eso es buena práctica.
+
+Vale la pena detenerse aquí, porque la hoja de vida es probablemente el documento sobre el que más se exagera en habilitación. Se han visto formatos de cuatro páginas con treinta campos, cuando la norma pide identificar el equipo y registrar sus mantenimientos.
+
+## Por qué "según corresponda"
+
+Esa expresión del numeral hace un trabajo importante: un equipo nuevo que aún no ha tenido correctivos no incumple por no tener registros de correctivo. Se registra lo que corresponda a la historia real del equipo.
+
+Lo que sí debe verse es coherencia: si el programa de mantenimiento dice preventivo semestral y el equipo lleva dos años, deberían aparecer cuatro registros. Si aparece uno solo, hay una brecha entre lo programado y lo ejecutado.
+
+## Lo mínimo que debe permitir
+
+Aunque la norma no liste campos, la hoja de vida tiene que permitir dos cosas:
+
+**Identificar el equipo sin ambigüedad.** Si tienes tres monitores iguales, la hoja de vida de uno debe distinguirse de la de los otros. Lo que los distingue es la serie.
+
+**Reconstruir su historia.** Qué se le hizo, cuándo y quién.
+
+Con eso basta. Si tu formato cumple esas dos funciones, cumple el numeral.
+
+## Cada registro de mantenimiento
+
+Lo que conviene que tenga cada entrada del historial:
+
+| Dato | Para qué |
+|---|---|
+| Fecha | Ubica la intervención en el tiempo |
+| Tipo | Preventivo o correctivo |
+| Descripción | Qué se hizo realmente |
+| Repuestos o partes | Trazabilidad de lo que se cambió |
+| Quién ejecutó | Nombre y formación |
+| Quién recibe | Cierra el ciclo |
+
+El campo de formación de quien ejecuta no es decorativo: conecta con el numeral 6, que sí es exigencia expresa.
+
+## El criterio que muchos ignoran
+
+> El mantenimiento de los equipos biomédicos es ejecutado por talento humano profesional, tecnólogo o técnico en áreas relacionadas. Este mantenimiento puede ser realizado directamente por el prestador de servicios de salud o mediante contrato o convenio con un tercero.
+
+Dos cosas. Primera: la norma admite expresamente tercerizar el mantenimiento, con contrato o convenio. Segunda, y más importante: exige que quien lo ejecuta sea profesional, tecnólogo o técnico **en áreas relacionadas**.
+
+Esto es un hallazgo real y frecuente. El mantenimiento lo hace el personal de mantenimiento general de la institución, o el auxiliar que sabe de electricidad, y no hay soporte de formación en áreas relacionadas. Ahí hay incumplimiento del numeral 6, criterio DOT-12.
+
+Si tercerizas, el soporte es el contrato o convenio. Si es personal propio, el soporte es su formación.
+
+## La descripción que no dice nada
+
+Un problema práctico: buena parte de los reportes de mantenimiento dicen "se realiza mantenimiento preventivo según protocolo" y nada más.
+
+Eso no permite reconstruir nada. Si el equipo falla tres meses después, no se puede saber qué se revisó ni qué no. Una descripción útil dice qué se verificó, qué se ajustó y qué se cambió.
+
+No es exigencia de la norma, pero es la diferencia entre una hoja de vida que sirve y una que solo ocupa espacio.
+
+## Los datos de adquisición
+
+La hoja de vida suele incluir fecha de compra, proveedor, forma de adquisición, valor y garantía. Nada de eso lo exige el estándar de dotación.
+
+Sirven para tres cosas prácticas: saber si el equipo está en garantía antes de pagar una reparación, verificar que la unidad es la que se compró (comparando serie contra el soporte), y sustentar decisiones de reposición.
+
+Por eso el criterio BP-02 está marcado como buena práctica y su verificación genera advertencia, no hallazgo.
+
+Un caso que conviene tener claro: si el equipo llegó en comodato, arriendo o donación, el soporte no es una factura sino el contrato o el acta. No es un problema, es otra figura.
+
+## Errores frecuentes
+
+| Error | Criterio |
+|---|---|
+| Una hoja de vida por modelo en vez de por unidad | DOT-08 |
+| Hoja de vida sin registros de mantenimiento | DOT-08 |
+| Menos registros de los que el programa implica | DOT-08 |
+| Ejecutor sin formación en áreas relacionadas | DOT-12 |
+| Tercerizado sin contrato ni convenio | DOT-12 |
+| Descripciones genéricas del trabajo realizado | Ninguno, pero inutiliza el documento |
+| Serie que no coincide con el soporte de adquisición | BP-02, advertencia |
+
+## Ejercicio
+
+Vas a diligenciar la hoja de vida de un equipo del caso. El motor verifica:
+
+1. Que exista al menos un registro de mantenimiento
+2. Que ningún ejecutor esté marcado sin formación en áreas relacionadas
+3. Que la serie coincida con el soporte de adquisición declarado, si lo declaraste
+
+Lo primero y lo segundo generan hallazgo. Lo tercero, advertencia.
+
+## Para llevarte
+
+La norma pide dos cosas: una hoja de vida por equipo y los registros de sus mantenimientos. Todo lo demás lo agregas porque hace útil el documento.
+
+Y presta atención a quién ejecuta el mantenimiento: ese sí es criterio expreso y se incumple más de lo que parece.
