@@ -1,0 +1,78 @@
+---
+id: g3-codificacion
+modulo: gestion-documental
+orden: 3
+titulo: Codificación y nomenclatura de documentos
+criterios: []
+glosario: []
+requiere: [g2-tipos-de-documento]
+tiempo_estimado: 30
+---
+
+## Qué problema resuelve un código
+
+Ninguno que la norma exija. Resuelve un problema práctico: cuando hay cien documentos, necesitas una forma de referirte a uno sin ambigüedad.
+
+Piensa en la escena real de una visita. El verificador pregunta por el programa de mantenimiento y alguien dice "el que está en la carpeta de calidad". Hay tres archivos con nombres parecidos. Con un código eso no pasa: se pide GT-PR-001 y se acabó la discusión.
+
+## Anatomía de un código
+
+Lo más común son tres bloques:
+
+```
+GT - PR - 001
+│    │     └── consecutivo dentro del tipo
+│    └──────── tipo de documento
+└───────────── área o proceso
+```
+
+Y se lee: documento de procedimiento número 1 del área de gestión de tecnología.
+
+**Área o proceso.** Dos o tres letras. Por ejemplo GT para gestión de tecnología, SP para seguridad del paciente, TH para talento humano, LC para laboratorio clínico.
+
+**Tipo.** Dos letras, según los tipos que vimos en G2: MN manual, PR procedimiento, IN instructivo, FO formato, PT protocolo, GU guía.
+
+**Consecutivo.** Tres dígitos, con ceros a la izquierda. Los ceros importan: sin ellos, el 10 se ordena antes del 2 en cualquier listado alfabético.
+
+## Reglas que evitan dolores de cabeza
+
+**El consecutivo no se reutiliza.** Si das de baja el GT-PR-003, ese número queda retirado para siempre. Reutilizarlo rompe la trazabilidad: dos documentos distintos con el mismo código en momentos distintos de la historia.
+
+**El código no describe el contenido.** Es tentador poner GT-PR-MANTENIMIENTO, pero si mañana el documento cambia de nombre, el código queda mintiendo. El código identifica; el título describe.
+
+**El código no cambia nunca.** Ni cuando cambia la versión, ni cuando cambia el responsable, ni cuando cambia el título. Si cambiara, dejaría de servir como identificador.
+
+**Un código, un documento.** Si el contenido cambia tanto que ya es otra cosa, se retira el documento y se crea uno nuevo con código nuevo.
+
+## Nombrar el archivo
+
+El código identifica; el nombre del archivo debe permitir encontrarlo. Una convención que funciona:
+
+```
+GT-PR-001_programa-mantenimiento_v3.pdf
+```
+
+Tres partes: código, título en minúsculas con guiones, y versión. Sin espacios, sin tildes, sin caracteres raros. Eso evita problemas al subir archivos, al buscarlos y al moverlos entre sistemas.
+
+Y el archivo se ordena solo: al listar la carpeta, los documentos quedan agrupados por área y tipo.
+
+## Errores frecuentes
+
+| Error | Qué causa |
+|---|---|
+| Consecutivo sin ceros a la izquierda | El orden alfabético se desordena: 1, 10, 11, 2, 3 |
+| Reutilizar códigos de documentos retirados | Se pierde la trazabilidad histórica |
+| Fecha en el nombre del archivo en vez de versión | No se sabe cuál es el vigente si hay dos del mismo mes |
+| Espacios y tildes en el nombre | Fallas al subir, descargar o enlazar archivos |
+| Códigos que describen el contenido | Quedan desactualizados cuando cambia el título |
+| Cambiar el código al actualizar el documento | Se rompen todas las referencias cruzadas |
+
+## Un consejo sobre el alcance
+
+No diseñes un sistema de codificación para doscientos documentos si tienes veinte. Empieza con las áreas que realmente tienes y agrega códigos nuevos cuando aparezcan. Un esquema sobredimensionado se abandona a los tres meses.
+
+## Para llevarte
+
+El código identifica de forma única y permanente; el título describe; la versión indica el estado. Son tres cosas distintas y no deben mezclarse en el mismo campo.
+
+Nada de esto lo exige la Resolución 3100. Lo haces porque cuando llegue la visita vas a encontrar el documento en dos minutos en vez de veinte.

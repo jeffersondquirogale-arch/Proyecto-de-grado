@@ -1,0 +1,72 @@
+{
+  "leccion": "g3-codificacion",
+  "aprobacion": 0.7,
+  "intentos": 2,
+  "preguntas": [
+    {
+      "id": "g3-p1",
+      "enunciado": "Se actualiza el programa de mantenimiento GT-PR-001 de la versión 2 a la 3. ¿Qué pasa con el código?",
+      "opciones": [
+        { "id": "a", "texto": "Cambia a GT-PR-002" },
+        { "id": "b", "texto": "Se mantiene igual; solo cambia la versión" },
+        { "id": "c", "texto": "Se le agrega el año: GT-PR-001-2026" },
+        { "id": "d", "texto": "Se retira y se crea un código nuevo" }
+      ],
+      "correcta": "b",
+      "explicacion": "El código identifica al documento de forma permanente. Si cambiara con cada actualización, se romperían todas las referencias cruzadas y dejaría de servir como identificador.",
+      "fuente": "Vocabulario de práctica"
+    },
+    {
+      "id": "g3-p2",
+      "enunciado": "¿Por qué se usan tres dígitos con ceros a la izquierda en el consecutivo?",
+      "opciones": [
+        { "id": "a", "texto": "Porque la norma establece ese formato" },
+        { "id": "b", "texto": "Para que el orden alfabético coincida con el numérico" },
+        { "id": "c", "texto": "Para limitar la cantidad de documentos a 999" },
+        { "id": "d", "texto": "Por convención internacional de los sistemas de calidad" }
+      ],
+      "correcta": "b",
+      "explicacion": "Sin ceros a la izquierda, un listado alfabético ordena 1, 10, 11, 2, 3. Con ceros queda 001, 002, 003, 010, 011.",
+      "fuente": "Vocabulario de práctica"
+    },
+    {
+      "id": "g3-p3",
+      "enunciado": "Se da de baja el documento GT-PR-003. ¿Puede usarse ese código para un documento nuevo?",
+      "opciones": [
+        { "id": "a", "texto": "Sí, para no dejar huecos en la numeración" },
+        { "id": "b", "texto": "Sí, después de un año de retirado" },
+        { "id": "c", "texto": "No: el consecutivo se retira definitivamente" },
+        { "id": "d", "texto": "Solo si el documento nuevo es del mismo tema" }
+      ],
+      "correcta": "c",
+      "explicacion": "Reutilizar el código haría que dos documentos distintos compartan identificador en momentos distintos de la historia, y se pierde la trazabilidad de los registros que lo referencian.",
+      "fuente": "Vocabulario de práctica"
+    },
+    {
+      "id": "g3-p4",
+      "enunciado": "¿Cuál de estos nombres de archivo está mejor construido?",
+      "opciones": [
+        { "id": "a", "texto": "Programa de Mantenimiento (versión final).pdf" },
+        { "id": "b", "texto": "GT-PR-001_programa-mantenimiento_v3.pdf" },
+        { "id": "c", "texto": "mantenimiento 17-09-2026.pdf" },
+        { "id": "d", "texto": "GT-PR-MANTENIMIENTO-PREVENTIVO.pdf" }
+      ],
+      "correcta": "b",
+      "explicacion": "Incluye código, título legible y versión, sin espacios ni tildes. La opción d mete el contenido dentro del código, que queda desactualizado si cambia el título; la c usa fecha en lugar de versión, y la a no identifica nada.",
+      "fuente": "Vocabulario de práctica"
+    },
+    {
+      "id": "g3-p5",
+      "enunciado": "¿Qué exige la Resolución 3100 sobre la codificación de documentos?",
+      "opciones": [
+        { "id": "a", "texto": "Un código de tres bloques: área, tipo y consecutivo" },
+        { "id": "b", "texto": "Solo que los documentos estén numerados" },
+        { "id": "c", "texto": "Nada: la codificación es buena práctica" },
+        { "id": "d", "texto": "Que el código incluya el año de expedición" }
+      ],
+      "correcta": "c",
+      "explicacion": "La definición de información documentada exige que esté escrita y socializada. La codificación no aparece en la norma: se adopta porque hace manejable la documentación y facilita encontrarla en una visita.",
+      "fuente": "Resolución 3100 de 2019, sección 4.6"
+    }
+  ]
+}
