@@ -1,0 +1,89 @@
+---
+id: g4-encabezado
+modulo: gestion-documental
+orden: 4
+titulo: Encabezado y control documental
+criterios: []
+glosario: []
+requiere: [g3-codificacion]
+tiempo_estimado: 30
+---
+
+## Qué es el encabezado
+
+Es el bloque de datos que identifica y controla un documento. Se repite en todas las páginas y responde cinco preguntas: qué documento es, de qué versión estamos hablando, desde cuándo rige, quién lo hizo y quién lo autorizó.
+
+## Los campos
+
+| Campo | Para qué sirve |
+|---|---|
+| Código | Identifica el documento de forma única y permanente |
+| Título | Describe el contenido |
+| Versión | Indica cuál de las ediciones es esta |
+| Fecha de aprobación | Desde cuándo rige |
+| Elaboró | Quién lo redactó |
+| Revisó | Quién verificó el contenido técnico |
+| Aprobó | Quién autorizó su uso |
+| Página | Ubica dentro del total, para detectar hojas faltantes |
+
+## Las tres firmas no son trámite
+
+Cada una responde a una pregunta distinta, y por eso no deberían recaer en la misma persona.
+
+**Elaboró** responde: ¿quién sabe cómo se hace esto? Suele ser quien ejecuta la actividad.
+
+**Revisó** responde: ¿esto es técnicamente correcto? Suele ser el líder del área o alguien con criterio técnico.
+
+**Aprobó** responde: ¿quién responde por esto ante la institución? Suele ser la dirección o el responsable del proceso.
+
+Cuando las tres las firma la misma persona, el control desaparece: nadie revisó nada. Es común en prestadores pequeños y es entendible, pero conviene al menos separar quien elabora de quien aprueba.
+
+## La fecha que importa
+
+El encabezado puede llevar varias fechas, y se confunden fácil:
+
+| Fecha | Qué significa |
+|---|---|
+| De elaboración | Cuándo se escribió el borrador |
+| De aprobación | Cuándo se autorizó |
+| De entrada en vigencia | Desde cuándo debe aplicarse |
+| De próxima revisión | Cuándo toca revisarlo de nuevo |
+
+La que no puede faltar es la de aprobación, porque es la que marca desde cuándo el documento tiene validez. Si un registro está fechado antes de la aprobación de su formato, algo no cuadra.
+
+La de próxima revisión es opcional pero útil: obliga a revisar la documentación aunque nada haya cambiado. Un documento de hace cinco años sin tocar suele describir una operación que ya no existe.
+
+## Reglas de consistencia
+
+Estas son las que el simulador va a verificar automáticamente:
+
+- El código del encabezado coincide con el del listado maestro
+- La versión del encabezado coincide con la del control de cambios
+- La fecha de aprobación no es posterior a la fecha actual
+- La fecha de aprobación es igual o posterior a la de elaboración
+- Los tres roles están diligenciados
+- Si hay fecha de próxima revisión, es posterior a la de aprobación
+
+Ninguna de estas reglas viene de la norma. Vienen de la coherencia interna del documento, y son justo lo que un verificador nota de una ojeada.
+
+## Errores frecuentes
+
+| Error | Por qué importa |
+|---|---|
+| Versión 1.0 en un documento que ya se modificó varias veces | El control de cambios contradice el encabezado |
+| Fecha de aprobación futura | El documento no puede regir todavía |
+| Encabezado solo en la primera página | Si se separan las hojas, no se sabe a qué documento pertenecen |
+| "Aprobó: Calidad" sin nombre ni cargo | No hay responsable identificable |
+| Documento sin fecha de aprobación | No se puede establecer desde cuándo rige |
+
+## Y otra vez el recordatorio
+
+La Resolución 3100 no exige encabezado, ni versión, ni firmas. Exige que la información esté escrita y socializada.
+
+El encabezado existe porque sin él no puedes demostrar cuál es la versión vigente, desde cuándo rige ni quién responde por el contenido. Es la infraestructura que sostiene lo que sí es obligatorio.
+
+## Para llevarte
+
+Ocho campos, tres firmas con propósitos distintos, y una fecha que no puede faltar: la de aprobación.
+
+Si tu prestador es pequeño y no puedes separar los tres roles, al menos separa quien elabora de quien aprueba. Es mejor un control parcial que un control ficticio.

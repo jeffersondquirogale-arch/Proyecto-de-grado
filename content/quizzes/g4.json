@@ -1,0 +1,72 @@
+{
+  "leccion": "g4-encabezado",
+  "aprobacion": 0.7,
+  "intentos": 2,
+  "preguntas": [
+    {
+      "id": "g4-p1",
+      "enunciado": "¿Cuál es la fecha del encabezado que no puede faltar?",
+      "opciones": [
+        { "id": "a", "texto": "La de elaboración" },
+        { "id": "b", "texto": "La de aprobación" },
+        { "id": "c", "texto": "La de próxima revisión" },
+        { "id": "d", "texto": "La de impresión" }
+      ],
+      "correcta": "b",
+      "explicacion": "La fecha de aprobación marca desde cuándo el documento tiene validez. Sin ella no se puede establecer si un registro anterior estaba respaldado por ese documento.",
+      "fuente": "Vocabulario de práctica"
+    },
+    {
+      "id": "g4-p2",
+      "enunciado": "En una IPS pequeña, la misma persona firma como elaboró, revisó y aprobó. ¿Cuál es el problema?",
+      "opciones": [
+        { "id": "a", "texto": "Ninguno, la norma lo permite" },
+        { "id": "b", "texto": "El control desaparece: nadie verificó el trabajo de otro" },
+        { "id": "c", "texto": "El documento queda sin validez legal" },
+        { "id": "d", "texto": "Se debe contratar un revisor externo" }
+      ],
+      "correcta": "b",
+      "explicacion": "Cada firma responde una pregunta distinta: quién sabe hacerlo, quién verificó que esté bien, y quién responde ante la institución. Con una sola persona el control es ficticio. En prestadores pequeños conviene al menos separar quien elabora de quien aprueba.",
+      "fuente": "Vocabulario de práctica"
+    },
+    {
+      "id": "g4-p3",
+      "enunciado": "Un registro de limpieza está fechado el 3 de marzo. El formato que se usó tiene fecha de aprobación del 15 de abril. ¿Qué indica esto?",
+      "opciones": [
+        { "id": "a", "texto": "Nada, las fechas son independientes" },
+        { "id": "b", "texto": "Que el formato se aprobó tarde pero el registro es válido" },
+        { "id": "c", "texto": "Una inconsistencia: el registro usa un formato que aún no regía" },
+        { "id": "d", "texto": "Que el registro debe repetirse" }
+      ],
+      "correcta": "c",
+      "explicacion": "Un registro no puede ser anterior a la aprobación del formato que lo respalda. Suele indicar que la documentación se elaboró después de los hechos, que es justo lo que el control documental permite detectar.",
+      "fuente": "Vocabulario de práctica"
+    },
+    {
+      "id": "g4-p4",
+      "enunciado": "¿Por qué el encabezado debe repetirse en todas las páginas?",
+      "opciones": [
+        { "id": "a", "texto": "Para cumplir el formato institucional" },
+        { "id": "b", "texto": "Para que una hoja suelta siga siendo identificable" },
+        { "id": "c", "texto": "Porque lo exige la Resolución 3100" },
+        { "id": "d", "texto": "Para facilitar el escaneo del documento" }
+      ],
+      "correcta": "b",
+      "explicacion": "Los documentos se separan, se fotocopian por partes y se archivan sueltos. El encabezado repetido, con la numeración de página sobre el total, permite saber a qué documento pertenece cada hoja y si falta alguna.",
+      "fuente": "Vocabulario de práctica"
+    },
+    {
+      "id": "g4-p5",
+      "enunciado": "El encabezado dice versión 1.0, pero el control de cambios registra tres modificaciones. ¿Qué ocurre?",
+      "opciones": [
+        { "id": "a", "texto": "Es correcto si los cambios fueron menores" },
+        { "id": "b", "texto": "Hay una inconsistencia entre encabezado y control de cambios" },
+        { "id": "c", "texto": "El control de cambios debe borrarse" },
+        { "id": "d", "texto": "La versión solo sube cuando cambia el responsable" }
+      ],
+      "correcta": "b",
+      "explicacion": "La versión del encabezado debe coincidir con la última entrada del control de cambios. Si no coinciden, no se puede saber cuál es realmente la edición vigente.",
+      "fuente": "Vocabulario de práctica"
+    }
+  ]
+}
