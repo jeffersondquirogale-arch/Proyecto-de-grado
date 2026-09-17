@@ -1,0 +1,111 @@
+---
+id: d7-programa-mantenimiento
+modulo: dotacion
+orden: 7
+titulo: El programa de mantenimiento preventivo
+criterios: [DOT-05, DOT-06, DOT-12]
+glosario: []
+requiere: [d6-manuales]
+formulario: programa-mantenimiento
+tiempo_estimado: 45
+---
+
+## El texto
+
+> Programa de mantenimiento preventivo de los equipos biomédicos, que incluya el cumplimiento de las recomendaciones establecidas por el fabricante o de acuerdo con el protocolo de mantenimiento que tenga definido el prestador, éste último cuando no esté definido por el fabricante.
+
+Ese numeral es el corazón del estándar de dotación y conviene leerlo con lupa, porque tiene una estructura condicional que mucha gente no ve.
+
+## Lo que la norma exige y lo que no
+
+Exige tres cosas:
+
+1. Que exista un programa de mantenimiento preventivo
+2. Que cumpla las recomendaciones del fabricante
+3. Si el fabricante no las define, que aplique un protocolo del prestador
+
+Y no exige: formato específico, periodicidad mínima, que lo firme un ingeniero, ni que incluya mantenimiento correctivo. El numeral habla de preventivo.
+
+## La regla condicional
+
+Esta es la clave de toda la lección:
+
+| Situación | Qué aplica |
+|---|---|
+| El fabricante define periodicidad | Se cumple lo que dice el fabricante |
+| El fabricante no la define | Se aplica un protocolo propio, documentado |
+
+No es opcional elegir entre las dos. El protocolo propio solo entra cuando el fabricante guarda silencio. Si el manual dice semestral y tú programas anual porque "es suficiente", hay hallazgo, y no lo salva ningún argumento técnico.
+
+Por eso el formulario del simulador te pide declarar la **fuente** de cada periodicidad. Si dices que viene del fabricante, el motor la compara contra el manual del caso. Si dices que es protocolo propio, te exige justificarlo.
+
+## Por qué la norma remite al fabricante
+
+Vale la pena entenderlo, no solo cumplirlo. El fabricante conoce los ciclos de desgaste de sus componentes, los ensayos de vida útil y las fallas reportadas de esa referencia. Ese conocimiento no lo tiene ni la IPS ni el ingeniero que hace el mantenimiento.
+
+Y ahí está la conexión con D3 y D6: si no tienes el manual, no puedes demostrar qué recomienda el fabricante. La remisión se queda sin respaldo.
+
+## Qué contiene el programa
+
+Lo que hace útil y verificable un programa:
+
+**Generalidades.** Periodo que cubre, responsable del programa y forma de ejecución (propia o tercerizada).
+
+**Cronograma por equipo.** Cada equipo del inventario, su periodicidad, la fuente de esa periodicidad y las fechas programadas.
+
+**Actividades.** Qué se hace en cada mantenimiento, según el tipo de equipo.
+
+**Recursos.** Quién lo ejecuta, herramientas e insumos.
+
+De todo eso, el cronograma es lo que el verificador revisa primero, y lo compara contra el inventario.
+
+## La cobertura
+
+El criterio DOT-05 tiene dos reglas en el simulador: que el programa exista y que **cubra todos los equipos del inventario**.
+
+Ese cruce es de los hallazgos más frecuentes y más fáciles de evitar. Suele pasar cuando se adquiere un equipo nuevo, se agrega al inventario y nadie actualiza el cronograma.
+
+La forma de prevenirlo es de procedimiento, no de documento: que la entrada de un equipo al inventario dispare automáticamente su ingreso al cronograma. Si tu documento de gestión de tecnología lo dice así, lo estás resolviendo de raíz.
+
+## Quién ejecuta
+
+Ya lo viste en D4, pero aquí se materializa en el programa. El numeral 6 exige profesional, tecnólogo o técnico en áreas relacionadas, propio o por contrato.
+
+En el programa esto se declara en generalidades: si la ejecución es propia, el soporte es la formación del personal; si es tercerizada, el soporte es el contrato o convenio.
+
+Un matiz del numeral 11: en sistemas centralizados de gases medicinales, el mantenimiento a los componentes del sistema lo realiza personal capacitado por el fabricante. Es más estricto que la regla general, aunque no aplica al caso piloto.
+
+## Programado no es ejecutado
+
+El programa dice lo que se va a hacer. La hoja de vida dice lo que se hizo. Un programa impecable con hojas de vida vacías demuestra intención, no cumplimiento.
+
+Por eso el verificador cruza los dos documentos: toma el cronograma, elige un equipo y pide los registros de esos mantenimientos.
+
+## Errores frecuentes
+
+| Error | Criterio |
+|---|---|
+| Cronograma que no incluye todos los equipos | DOT-05 |
+| Periodicidad distinta a la del manual | DOT-06 |
+| Protocolo propio cuando el fabricante sí define periodicidad | DOT-06 |
+| Protocolo propio sin justificación documentada | DOT-06 |
+| Ejecutor sin formación en áreas relacionadas | DOT-12 |
+| Tercerización sin contrato | DOT-12 |
+| Programa sin ejecución evidenciada en hojas de vida | DOT-08 |
+
+## Ejercicio
+
+En el formulario vas a construir el programa del caso. El motor verifica:
+
+1. Que el programa declare periodo y responsable
+2. Que el cronograma cubra todos los equipos del inventario
+3. Que la periodicidad coincida con el manual, cuando declares que viene del fabricante
+4. Que justifiques el protocolo propio, cuando lo declares
+
+Los cuatro generan hallazgo. Aquí no hay advertencias: todo esto es exigencia expresa o por remisión.
+
+## Para llevarte
+
+El programa existe, cubre todo el inventario y respeta lo que dice el fabricante. El protocolo propio solo entra cuando el fabricante no define periodicidad, y hay que poder sustentarlo.
+
+Y recuerda que el programa por sí solo no demuestra nada: lo que demuestra cumplimiento son los registros en las hojas de vida.
