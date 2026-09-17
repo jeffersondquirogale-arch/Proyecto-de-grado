@@ -1,0 +1,72 @@
+{
+  "leccion": "g1-que-exige-la-norma",
+  "aprobacion": 0.7,
+  "intentos": 2,
+  "preguntas": [
+    {
+      "id": "g1-p1",
+      "enunciado": "Según la definición de información documentada del manual, ¿cuáles son los dos requisitos que debe cumplir?",
+      "opciones": [
+        { "id": "a", "texto": "Estar codificada y aprobada por la dirección" },
+        { "id": "b", "texto": "Estar escrita y socializada" },
+        { "id": "c", "texto": "Estar en español y en medio físico" },
+        { "id": "d", "texto": "Tener versión vigente y listado maestro" }
+      ],
+      "correcta": "b",
+      "explicacion": "La definición exige que la información esté escrita y socializada. Permite expresamente cualquier medio, fuente, formato o idioma.",
+      "fuente": "Resolución 3100 de 2019, sección 4.6"
+    },
+    {
+      "id": "g1-p2",
+      "enunciado": "Un protocolo está impecablemente redactado, codificado y firmado, pero el personal del servicio nunca lo ha leído. ¿Cumple la norma?",
+      "opciones": [
+        { "id": "a", "texto": "Sí, porque existe por escrito y está aprobado" },
+        { "id": "b", "texto": "Sí, siempre que esté en el listado maestro" },
+        { "id": "c", "texto": "No, porque falta la socialización" },
+        { "id": "d", "texto": "Depende de la complejidad del prestador" }
+      ],
+      "correcta": "c",
+      "explicacion": "La socialización hace parte de la definición oficial. Un documento que nadie conoce incumple igual que uno inexistente, y el verificador lo comprueba preguntándole al personal.",
+      "fuente": "Resolución 3100 de 2019, sección 4.6"
+    },
+    {
+      "id": "g1-p3",
+      "enunciado": "En el manual de habilitación, ¿qué es un procedimiento?",
+      "opciones": [
+        { "id": "a", "texto": "Un documento que describe cómo se hace una tarea" },
+        { "id": "b", "texto": "Un conjunto de acciones realizadas en alguna fase de la atención" },
+        { "id": "c", "texto": "Un formato diligenciado que sirve como evidencia" },
+        { "id": "d", "texto": "El listado de actividades administrativas del prestador" }
+      ],
+      "correcta": "b",
+      "explicacion": "El manual define procedimiento como un acto de la atención (promoción, prevención, diagnóstico, tratamiento, rehabilitación o paliación), no como un documento. Una venopunción es un procedimiento; el papel que explica cómo hacerla es un documento sobre ese procedimiento.",
+      "fuente": "Resolución 3100 de 2019, sección 4.1"
+    },
+    {
+      "id": "g1-p4",
+      "enunciado": "¿Cuál de estos elementos NO es exigido por la Resolución 3100?",
+      "opciones": [
+        { "id": "a", "texto": "Que la información esté escrita" },
+        { "id": "b", "texto": "Que la información esté socializada" },
+        { "id": "c", "texto": "Que el documento tenga código y número de versión" },
+        { "id": "d", "texto": "Ninguno: los tres son exigidos" }
+      ],
+      "correcta": "c",
+      "explicacion": "El código y la versión son buena práctica de control documental. Sirven para demostrar antigüedad, identificar la versión vigente y facilitar la búsqueda en visita, pero la norma no los exige.",
+      "fuente": "Resolución 3100 de 2019, sección 4.6"
+    },
+    {
+      "id": "g1-p5",
+      "enunciado": "Una IPS descarga de internet un manual de bioseguridad de otra institución, lo imprime sin cambios y lo archiva. ¿Cuál es el problema principal en una visita?",
+      "opciones": [
+        { "id": "a", "texto": "Que no es de autoría propia" },
+        { "id": "b", "texto": "Que no refleja la operación real del prestador" },
+        { "id": "c", "texto": "Que está en formato impreso" },
+        { "id": "d", "texto": "Que no tiene el logotipo institucional" }
+      ],
+      "correcta": "b",
+      "explicacion": "La norma permite información de cualquier fuente. El problema aparece cuando el documento menciona servicios que no se prestan o equipos que no se tienen: el verificador concluye que no describe lo que realmente ocurre en la institución.",
+      "fuente": "Resolución 3100 de 2019, sección 4.6"
+    }
+  ]
+}
