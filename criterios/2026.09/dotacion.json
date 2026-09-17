@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "version": "2026.09",
+    "fecha": "2026-09-16",
+    "estandar": "Dotación",
+    "norma_base": "Resolución 3100 de 2019 y modificatorias (vigente por Resolución 2080 de 2026)",
+    "estado": "borrador",
+    "nota": "Redacción propia a partir del anexo técnico. Cada criterio debe contrastarse con el texto oficial y validarse con los expertos antes del piloto.",
+    "aplica_a": {
+      "tipo_prestador": "IPS",
+      "complejidad": "baja",
+      "servicios": ["consulta externa medicina general", "enfermería", "toma de muestras de laboratorio clínico"]
+    }
+  },
+  "criterios": [
+    {
+      "codigo": "DOT-INV-01",
+      "leccion": "D1",
+      "descripcion": "Existe un inventario de equipos biomédicos por servicio y sede.",
+      "evidencia_esperada": "Documento de inventario con servicio y sede identificados.",
+      "riesgo": "medio"
+    },
+    {
+      "codigo": "DOT-INV-02",
+      "leccion": "D1",
+      "descripcion": "Cada equipo del inventario está identificado de forma única.",
+      "evidencia_esperada": "Marca, modelo, serie, código interno y ubicación por equipo.",
+      "riesgo": "medio"
+    },
+    {
+      "codigo": "DOT-INV-03",
+      "leccion": "D1",
+      "descripcion": "El inventario es coherente con los servicios declarados por el prestador.",
+      "evidencia_esperada": "Los equipos exigidos para cada servicio habilitado aparecen en el inventario.",
+      "riesgo": "alto",
+      "cruza_con": ["DOT-MTO-02"]
+    },
+    {
+      "codigo": "DOT-REG-01",
+      "leccion": "D2",
+      "descripcion": "Cada dispositivo médico cuenta con registro sanitario o permiso de comercialización vigente.",
+      "evidencia_esperada": "Número de registro y fecha de vigencia, verificable en la consulta del INVIMA.",
+      "riesgo": "alto",
+      "norma_complementaria": "Decreto 4725 de 2005"
+    },
+    {
+      "codigo": "DOT-REG-02",
+      "leccion": "D2",
+      "descripcion": "El registro sanitario corresponde a la marca y el modelo del equipo instalado.",
+      "evidencia_esperada": "Coincidencia entre el registro y los datos del equipo.",
+      "riesgo": "alto"
+    },
+    {
+      "codigo": "DOT-REG-03",
+      "leccion": "D2",
+      "descripcion": "La clasificación de riesgo del dispositivo está documentada.",
+      "evidencia_esperada": "Clase I, IIa, IIb o III registrada en la hoja de vida o ficha técnica.",
+      "riesgo": "medio",
+      "norma_complementaria": "Decreto 4725 de 2005"
+    },
+    {
+      "codigo": "DOT-FT-01",
+      "leccion": "D3",
+      "descripcion": "Existe ficha técnica del equipo con sus especificaciones.",
+      "evidencia_esperada": "Especificaciones técnicas, requisitos eléctricos, accesorios y consumibles.",
+      "riesgo": "bajo"
+    },
+    {
+      "codigo": "DOT-FT-02",
+      "leccion": "D3",
+      "descripcion": "La ficha técnica indica las condiciones ambientales y de instalación requeridas.",
+      "evidencia_esperada": "Rangos de temperatura, humedad y condiciones eléctricas.",
+      "riesgo": "bajo"
+    },
+    {
+      "codigo": "DOT-HV-01",
+      "leccion": "D4",
+      "descripcion": "Cada equipo biomédico tiene hoja de vida.",
+      "evidencia_esperada": "Documento individual por equipo, no por modelo.",
+      "riesgo": "alto"
+    },
+    {
+      "codigo": "DOT-HV-02",
+      "leccion": "D4",
+      "descripcion": "La hoja de vida identifica el equipo de forma completa.",
+      "evidencia_esperada": "Nombre, marca, modelo, serie, código interno y ubicación.",
+      "riesgo": "medio"
+    },
+    {
+      "codigo": "DOT-HV-03",
+      "leccion": "D4",
+      "descripcion": "La hoja de vida registra la periodicidad de mantenimiento y calibración según el fabricante.",
+      "evidencia_esperada": "Frecuencia explícita y coherente con el manual del equipo.",
+      "riesgo": "alto",
+      "cruza_con": ["DOT-MTO-03"]
+    },
+    {
+      "codigo": "DOT-HV-04",
+      "leccion": "D4",
+      "descripcion": "La hoja de vida registra los datos de adquisición del equipo.",
+      "evidencia_esperada": "Fecha, proveedor, forma de adquisición (compra, donación, comodato) y garantía.",
+      "riesgo": "medio"
+    },
+    {
+      "codigo": "DOT-HV-05",
+      "leccion": "D4",
+      "descripcion": "Los datos de la hoja de vida coinciden con el soporte de adquisición.",
+      "evidencia_esperada": "Serie, marca y modelo iguales en hoja de vida y factura o contrato.",
+      "riesgo": "alto",
+      "cruza_con": ["DOT-ADQ-02"]
+    },
+    {
+      "codigo": "DOT-HV-06",
+      "leccion": "D4",
+      "descripcion": "La hoja de vida registra el historial de intervenciones del equipo.",
+      "evidencia_esperada": "Fecha, tipo de intervención y responsable de cada evento.",
+      "riesgo": "medio"
+    },
+    {
+      "codigo": "DOT-ADQ-01",
+      "leccion": "D5",
+      "descripcion": "Existe soporte de propiedad o tenencia del equipo.",
+      "evidencia_esperada": "Factura, contrato de comodato, arriendo o acta de donación.",
+      "riesgo": "medio"
+    },
+    {
+      "codigo": "DOT-ADQ-02",
+      "leccion": "D5",
+      "descripcion": "El soporte de adquisición es válido y coherente con el equipo.",
+      "evidencia_esperada": "Proveedor y NIT identificados; marca, modelo y serie coincidentes; fecha coherente.",
+      "riesgo": "alto"
+    },
+    {
+      "codigo": "DOT-MAN-01",
+      "leccion": "D6",
+      "descripcion": "El equipo cuenta con manual de operación disponible para el usuario.",
+      "evidencia_esperada": "Manual en español, accesible en el punto de atención o en el sistema documental.",
+      "riesgo": "medio"
+    },
+    {
+      "codigo": "DOT-MTO-01",
+      "leccion": "D7",
+      "descripcion": "Existe un plan y cronograma de mantenimiento preventivo.",
+      "evidencia_esperada": "Documento con periodo, equipos y responsable.",
+      "riesgo": "alto"
+    },
+    {
+      "codigo": "DOT-MTO-02",
+      "leccion": "D7",
+      "descripcion": "El cronograma cubre todos los equipos del inventario.",
+      "evidencia_esperada": "Cada equipo del inventario aparece programado.",
+      "riesgo": "alto",
+      "cruza_con": ["DOT-INV-03"]
+    },
+    {
+      "codigo": "DOT-MTO-03",
+      "leccion": "D7",
+      "descripcion": "La frecuencia programada corresponde a la recomendada por el fabricante.",
+      "evidencia_esperada": "Coincidencia entre cronograma, hoja de vida y manual.",
+      "riesgo": "alto",
+      "cruza_con": ["DOT-HV-03"]
+    },
+    {
+      "codigo": "DOT-RPT-01",
+      "leccion": "D8",
+      "descripcion": "Existen reportes de los mantenimientos ejecutados.",
+      "evidencia_esperada": "Reportes de preventivo y correctivo del periodo evaluado.",
+      "riesgo": "alto"
+    },
+    {
+      "codigo": "DOT-RPT-02",
+      "leccion": "D8",
+      "descripcion": "El reporte de mantenimiento contiene los datos mínimos y las firmas.",
+      "evidencia_esperada": "Equipo, fecha, actividades, repuestos, responsable que ejecuta y quien recibe.",
+      "riesgo": "medio"
+    },
+    {
+      "codigo": "DOT-CAL-01",
+      "leccion": "D9",
+      "descripcion": "Los equipos de medición sujetos a calibración están identificados.",
+      "evidencia_esperada": "Listado de equipos de medición dentro del inventario.",
+      "riesgo": "medio"
+    },
+    {
+      "codigo": "DOT-CAL-02",
+      "leccion": "D9",
+      "descripcion": "Los certificados de calibración están vigentes.",
+      "evidencia_esperada": "Certificado con fecha de calibración y periodicidad definida.",
+      "riesgo": "alto"
+    },
+    {
+      "codigo": "DOT-CAL-03",
+      "leccion": "D9",
+      "descripcion": "El certificado evidencia trazabilidad metrológica.",
+      "evidencia_esperada": "Laboratorio acreditado, patrones de referencia, error e incertidumbre.",
+      "riesgo": "medio",
+      "referencia_tecnica": "ISO/IEC 17025"
+    },
+    {
+      "codigo": "DOT-TCV-01",
+      "leccion": "D10",
+      "descripcion": "El prestador cuenta con programa institucional de tecnovigilancia documentado.",
+      "evidencia_esperada": "Documento con objetivo, responsable designado y procedimiento de reporte.",
+      "riesgo": "alto",
+      "norma_complementaria": "Resolución 4816 de 2008"
+    },
+    {
+      "codigo": "DOT-TCV-02",
+      "leccion": "D10",
+      "descripcion": "Existen registros de los reportes realizados al programa nacional.",
+      "evidencia_esperada": "Reportes de eventos e incidentes o reporte trimestral en cero.",
+      "riesgo": "alto",
+      "norma_complementaria": "Resolución 4816 de 2008"
+    },
+    {
+      "codigo": "DOT-TCV-03",
+      "leccion": "D10",
+      "descripcion": "Se evidencia consulta y gestión de alertas sanitarias.",
+      "evidencia_esperada": "Registro de consulta de alertas y acciones sobre equipos del inventario.",
+      "riesgo": "medio"
+    },
+    {
+      "codigo": "DOT-CAP-01",
+      "leccion": "D11",
+      "descripcion": "Existe plan de capacitación en el uso de los equipos biomédicos.",
+      "evidencia_esperada": "Plan con temas, dirigido a los usuarios de cada servicio.",
+      "riesgo": "medio"
+    },
+    {
+      "codigo": "DOT-CAP-02",
+      "leccion": "D11",
+      "descripcion": "La capacitación ejecutada está evidenciada.",
+      "evidencia_esperada": "Acta, lista de asistencia firmada y evaluación de la capacitación.",
+      "riesgo": "medio"
+    },
+    {
+      "codigo": "DOT-BAJ-01",
+      "leccion": "D12",
+      "descripcion": "Las bajas de equipos están documentadas.",
+      "evidencia_esperada": "Acta de baja con justificación técnica y disposición final.",
+      "riesgo": "bajo"
+    }
+  ]
+}
