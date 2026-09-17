@@ -1,0 +1,91 @@
+{
+  "leccion": "d4-hoja-de-vida",
+  "aprobacion": 0.7,
+  "intentos": 2,
+  "preguntas": [
+    {
+      "id": "d4-p1",
+      "criterio": "DOT-08",
+      "enunciado": "¿Qué exige literalmente el numeral 2.2 sobre la hoja de vida?",
+      "opciones": [
+        { "id": "a", "texto": "Identificación completa, datos de adquisición, garantía y periodicidad de mantenimiento" },
+        { "id": "b", "texto": "Hoja de vida del equipo con los registros de los mantenimientos preventivos y correctivos, según corresponda" },
+        { "id": "c", "texto": "Un formato institucional aprobado por la dirección" },
+        { "id": "d", "texto": "La hoja de vida y la ficha técnica en un mismo documento" }
+      ],
+      "correcta": "b",
+      "explicacion": "El numeral es breve: hoja de vida por equipo, con los registros de mantenimientos preventivos y correctivos según corresponda. Todo lo demás que suelen traer los formatos es buena práctica.",
+      "fuente": "Resolución 3100 de 2019, numeral 11.1.3 - 2.2"
+    },
+    {
+      "id": "d4-p2",
+      "criterio": "DOT-12",
+      "enunciado": "El mantenimiento preventivo de los equipos lo hace el técnico de mantenimiento general de la IPS, sin formación en áreas relacionadas con equipos biomédicos. ¿Qué ocurre?",
+      "opciones": [
+        { "id": "a", "texto": "Cumple, porque es personal propio de la institución" },
+        { "id": "b", "texto": "Cumple si el trabajo queda bien ejecutado" },
+        { "id": "c", "texto": "Hay hallazgo: el numeral exige profesional, tecnólogo o técnico en áreas relacionadas" },
+        { "id": "d", "texto": "Cumple si la dirección lo autoriza por escrito" }
+      ],
+      "correcta": "c",
+      "explicacion": "El numeral 6 exige que el mantenimiento sea ejecutado por talento humano profesional, tecnólogo o técnico en áreas relacionadas. Es un hallazgo frecuente cuando se asigna al personal de mantenimiento general.",
+      "fuente": "Resolución 3100 de 2019, numeral 11.1.3 - 6"
+    },
+    {
+      "id": "d4-p3",
+      "criterio": "DOT-12",
+      "enunciado": "La IPS contrata el mantenimiento con una empresa externa. ¿La norma lo permite?",
+      "opciones": [
+        { "id": "a", "texto": "No, debe ser personal propio" },
+        { "id": "b", "texto": "Sí, mediante contrato o convenio con un tercero" },
+        { "id": "c", "texto": "Solo para equipos de clase III" },
+        { "id": "d", "texto": "Solo si la IPS no tiene ingeniero biomédico" }
+      ],
+      "correcta": "b",
+      "explicacion": "El numeral 6 admite expresamente que el mantenimiento se realice directamente o mediante contrato o convenio con un tercero. En ese caso el soporte es el contrato; si es personal propio, el soporte es su formación.",
+      "fuente": "Resolución 3100 de 2019, numeral 11.1.3 - 6"
+    },
+    {
+      "id": "d4-p4",
+      "criterio": "DOT-08",
+      "enunciado": "Un equipo adquirido hace tres meses no tiene registros de mantenimiento correctivo. ¿Es hallazgo?",
+      "opciones": [
+        { "id": "a", "texto": "Sí, la hoja de vida debe tener ambos tipos de registro" },
+        { "id": "b", "texto": "No: el numeral dice 'según corresponda' y el equipo no ha requerido correctivos" },
+        { "id": "c", "texto": "Sí, salvo que el equipo esté en garantía" },
+        { "id": "d", "texto": "Depende de la clase de riesgo del equipo" }
+      ],
+      "correcta": "b",
+      "explicacion": "La expresión 'según corresponda' permite que la hoja de vida refleje la historia real del equipo. Lo que sí debe cuadrar es la relación entre lo programado y lo ejecutado en preventivos.",
+      "fuente": "Resolución 3100 de 2019, numeral 11.1.3 - 2.2"
+    },
+    {
+      "id": "d4-p5",
+      "criterio": "BP-02",
+      "enunciado": "La serie registrada en la hoja de vida no coincide con la del soporte de adquisición. ¿Cómo se reporta?",
+      "opciones": [
+        { "id": "a", "texto": "Como hallazgo de habilitación por incumplimiento del numeral 2.2" },
+        { "id": "b", "texto": "Como advertencia: el estándar de dotación no exige soporte de adquisición" },
+        { "id": "c", "texto": "No se reporta, es un asunto contable" },
+        { "id": "d", "texto": "Como hallazgo del estándar de medicamentos y dispositivos" }
+      ],
+      "correcta": "b",
+      "explicacion": "El estándar de dotación no exige factura ni contrato de adquisición. La discrepancia se reporta como advertencia porque señala un problema real de identificación del equipo, pero no incumple la norma.",
+      "fuente": "Resolución 3100 de 2019, numeral 11.1.3"
+    },
+    {
+      "id": "d4-p6",
+      "criterio": "DOT-08",
+      "enunciado": "El programa establece mantenimiento preventivo semestral. El equipo lleva dos años y la hoja de vida registra un solo preventivo. ¿Qué indica?",
+      "opciones": [
+        { "id": "a", "texto": "Nada, mientras exista al menos un registro" },
+        { "id": "b", "texto": "Una brecha entre lo programado y lo ejecutado" },
+        { "id": "c", "texto": "Que debe cambiarse la periodicidad del programa" },
+        { "id": "d", "texto": "Que el equipo no requiere mantenimiento tan frecuente" }
+      ],
+      "correcta": "b",
+      "explicacion": "Con periodicidad semestral y dos años de uso deberían aparecer alrededor de cuatro registros. La coherencia entre el programa y la hoja de vida es lo que demuestra que el mantenimiento realmente se ejecuta.",
+      "fuente": "Resolución 3100 de 2019, numerales 11.1.3 - 2.1 y 2.2"
+    }
+  ]
+}
