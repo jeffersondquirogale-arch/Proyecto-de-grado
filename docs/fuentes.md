@@ -20,7 +20,7 @@ Regla: solo fuentes oficiales (Ministerio de Salud, INVIMA, MinTIC, Diario Ofici
 |---|---|---|---|
 | Resolución 3100 de 2019 y anexo técnico | Los 7 estándares y todos los criterios; es el texto madre del módulo | minsalud.gov.co/sites/rid/Lists/BibliotecaDigital/RIDE/DE/DIJ/resolucion-3100-de-2019.pdf | Descargado 17-09-2026 |
 | Texto compilado de la 3100 con sus modificatorias | Muestra qué artículo modificó cada resolución posterior | cancilleria.gov.co/normograma/compilacion/docs/resolucion_minsaludps_3100_2019.htm | Descargado 17-09-2026 |
-| Resolución 465 de 2025 | Modifica los artículos 4, 5, 7, 19 y 20 | minsalud.gov.co/sites/rid/Lists/BibliotecaDigital/RIDE/DE/DIJ/resolucion-465-de-2025.pdf | Descargado 17-09-2026 |
+| Resolución 465 de 2025 | Modifica los artículos 4, 5, 7, 19 y 20 · verificada 17-09-2026: no afecta dotación | minsalud.gov.co/sites/rid/Lists/BibliotecaDigital/RIDE/DE/DIJ/resolucion-465-de-2025.pdf | Descargado 17-09-2026 |
 | Resolución 544 de 2023 | Modificatoria anterior, aún vigente en varios artículos | — | Por localizar |
 | Resolución 2215 de 2020 | Modifica los artículos 19 y 26 | — | Por localizar |
 | Resolución 2080 de 2026 | Revoca la 1732 de 2026 y ratifica la vigencia de la 3100 | — | Por localizar en Diario Oficial |
