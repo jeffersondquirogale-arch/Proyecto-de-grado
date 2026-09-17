@@ -1,0 +1,63 @@
+{
+  "leccion": "d5-soporte-adquisicion",
+  "aprobacion": 0.7,
+  "intentos": 2,
+  "preguntas": [
+    {
+      "id": "d5-p1",
+      "criterio": "BP-02",
+      "enunciado": "¿Exige el estándar de dotación el soporte de adquisición de los equipos?",
+      "opciones": [
+        { "id": "a", "texto": "Sí, factura o contrato para cada equipo" },
+        { "id": "b", "texto": "No: es buena práctica, no exigencia del estándar" },
+        { "id": "c", "texto": "Sí, pero solo para equipos de tecnología controlada" },
+        { "id": "d", "texto": "Sí, cuando el equipo supera cierto valor" }
+      ],
+      "correcta": "b",
+      "explicacion": "El numeral 11.1.3 no menciona soportes de propiedad ni de tenencia. Se registran porque permiten identificar la unidad, conocer la titularidad y controlar la garantía.",
+      "fuente": "Resolución 3100 de 2019, numeral 11.1.3"
+    },
+    {
+      "id": "d5-p2",
+      "criterio": "BP-02",
+      "enunciado": "Un equipo está en comodato: el proveedor lo presta y la IPS compra los insumos. ¿Quién debe tener la hoja de vida y garantizar el mantenimiento ante habilitación?",
+      "opciones": [
+        { "id": "a", "texto": "El comodante, porque el equipo es suyo" },
+        { "id": "b", "texto": "Nadie, los equipos en comodato están exentos" },
+        { "id": "c", "texto": "La IPS: las obligaciones de habilitación son suyas aunque el equipo sea de un tercero" },
+        { "id": "d", "texto": "Se reparte según lo que diga el contrato" }
+      ],
+      "correcta": "c",
+      "explicacion": "La titularidad del equipo no traslada las obligaciones de habilitación. La IPS responde por hoja de vida, mantenimiento y registro sanitario. Quién ejecuta materialmente el mantenimiento suele pactarse en el contrato, pero la responsabilidad ante el verificador es del prestador.",
+      "fuente": "Resolución 3100 de 2019, numeral 11.1.3"
+    },
+    {
+      "id": "d5-p3",
+      "criterio": "BP-02",
+      "enunciado": "Una IPS recibió un equipo en donación. ¿Cuál es el soporte que corresponde?",
+      "opciones": [
+        { "id": "a", "texto": "Factura emitida por el donante" },
+        { "id": "b", "texto": "Acta de donación" },
+        { "id": "c", "texto": "Contrato de comodato" },
+        { "id": "d", "texto": "No requiere soporte alguno" }
+      ],
+      "correcta": "b",
+      "explicacion": "Cada forma de adquisición tiene su figura: factura para compra, contrato para comodato o arriendo, y acta para donación. Exigir factura a un equipo donado es un error de concepto.",
+      "fuente": "Vocabulario de práctica"
+    },
+    {
+      "id": "d5-p4",
+      "criterio": "BP-02",
+      "enunciado": "¿Sirve la factura para acreditar el registro sanitario del equipo?",
+      "opciones": [
+        { "id": "a", "texto": "Sí, si el proveedor lo incluye en la descripción" },
+        { "id": "b", "texto": "No: el número de la factura puede corresponder a otro producto del proveedor" },
+        { "id": "c", "texto": "Sí, siempre que la factura sea electrónica" },
+        { "id": "d", "texto": "Sí, para equipos de clase I y IIa" }
+      ],
+      "correcta": "b",
+      "explicacion": "El registro se verifica en la consulta del INVIMA, comprobando que ampare esa marca y ese modelo. Copiar el número desde una factura sin verificarlo es uno de los errores más frecuentes del inventario.",
+      "fuente": "Decreto 4725 de 2005"
+    }
+  ]
+}
