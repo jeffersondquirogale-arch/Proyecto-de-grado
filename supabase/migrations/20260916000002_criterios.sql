@@ -1,6 +1,5 @@
 -- Normativa y base de criterios versionada
 
-create type nivel_riesgo  is null; -- marcador
 drop type if exists nivel_riesgo;
 create type nivel_riesgo as enum ('bajo', 'medio', 'alto');
 create type estado_norma as enum ('verificada', 'marco', 'verificar', 'no_usar');
