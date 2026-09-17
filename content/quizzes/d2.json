@@ -1,0 +1,91 @@
+{
+  "leccion": "d2-registro-sanitario",
+  "aprobacion": 0.7,
+  "intentos": 2,
+  "preguntas": [
+    {
+      "id": "d2-p1",
+      "criterio": "DOT-03",
+      "enunciado": "La IPS adquirió un monitor repotenciado, clasificado como IIa. ¿Qué documento debe amparar ese equipo?",
+      "opciones": [
+        { "id": "a", "texto": "Registro sanitario, porque es clase IIa" },
+        { "id": "b", "texto": "Permiso de comercialización, porque el equipo usado o repotenciado es tecnología controlada" },
+        { "id": "c", "texto": "Cualquiera de los dos, son equivalentes" },
+        { "id": "d", "texto": "Ninguno, los equipos usados están exentos" }
+      ],
+      "correcta": "b",
+      "explicacion": "El decreto incluye expresamente el equipo usado o repotenciado entre las situaciones que lo convierten en tecnología controlada, sin importar su clase de riesgo. Y la tecnología controlada se ampara con permiso de comercialización.",
+      "fuente": "Decreto 4725 de 2005, definición de equipo biomédico de tecnología controlada, literal d"
+    },
+    {
+      "id": "d2-p2",
+      "criterio": "DOT-04",
+      "enunciado": "¿Quién determina la clasificación por riesgo de un dispositivo médico?",
+      "opciones": [
+        { "id": "a", "texto": "El fabricante" },
+        { "id": "b", "texto": "El ingeniero biomédico de la IPS" },
+        { "id": "c", "texto": "El verificador durante la visita" },
+        { "id": "d", "texto": "El proveedor que lo vende" }
+      ],
+      "correcta": "a",
+      "explicacion": "El artículo 5 del decreto establece que la clasificación la realiza el fabricante, fundamentada en los riesgos potenciales del uso y el posible fracaso del dispositivo. La IPS copia ese dato del registro o permiso.",
+      "fuente": "Decreto 4725 de 2005, artículo 5"
+    },
+    {
+      "id": "d2-p3",
+      "criterio": "DOT-04",
+      "enunciado": "Para un dispositivo son aplicables dos reglas de clasificación que conducen a clases distintas. ¿Cuál se aplica?",
+      "opciones": [
+        { "id": "a", "texto": "La más baja, por el principio de proporcionalidad" },
+        { "id": "b", "texto": "La que indique el importador" },
+        { "id": "c", "texto": "La que conduzca a la clasificación más elevada" },
+        { "id": "d", "texto": "Se promedian ambas clases" }
+      ],
+      "correcta": "c",
+      "explicacion": "El artículo 6 lo resuelve expresamente: cuando aplican varias reglas según las funciones que le atribuye el fabricante, se aplica la que conduzca a la clasificación más elevada.",
+      "fuente": "Decreto 4725 de 2005, artículo 6, literal d"
+    },
+    {
+      "id": "d2-p4",
+      "criterio": "DOT-03",
+      "enunciado": "El inventario registra el número de registro sanitario tomado de la factura del proveedor. ¿Qué hay que verificar antes de darlo por bueno?",
+      "opciones": [
+        { "id": "a", "texto": "Que la factura esté firmada por el proveedor" },
+        { "id": "b", "texto": "Que el registro ampare la marca y el modelo de ese equipo, y esté vigente" },
+        { "id": "c", "texto": "Que el registro tenga menos de cinco años" },
+        { "id": "d", "texto": "Que el número tenga el formato correcto" }
+      ],
+      "correcta": "b",
+      "explicacion": "El registro ampara marcas y modelos determinados. La factura puede traer el número de otro producto del mismo proveedor, y es un error frecuente. La consulta en línea del INVIMA permite verificar número, titular, productos amparados, clase de riesgo y vigencia.",
+      "fuente": "Resolución 3100 de 2019, numeral 11.1.3 - 1.5; Decreto 4725 de 2005"
+    },
+    {
+      "id": "d2-p5",
+      "criterio": "MED-01",
+      "enunciado": "El estándar de medicamentos y dispositivos exige información documentada de los dispositivos médicos. ¿Qué agrega respecto del inventario de dotación?",
+      "opciones": [
+        { "id": "a", "texto": "Nada, pide exactamente los mismos datos" },
+        { "id": "b", "texto": "Agrega descripción, presentación comercial, vida útil, lote y fecha de vencimiento, y exige que el registro esté vigente" },
+        { "id": "c", "texto": "Agrega únicamente el valor de adquisición" },
+        { "id": "d", "texto": "Agrega la ubicación y el código interno" }
+      ],
+      "correcta": "b",
+      "explicacion": "El numeral 11.1.4 - 2 pide nueve datos e incluye expresamente la palabra vigente para el registro o permiso, algo que el numeral de dotación no dice de forma explícita.",
+      "fuente": "Resolución 3100 de 2019, numeral 11.1.4 - 2"
+    },
+    {
+      "id": "d2-p6",
+      "criterio": "DOT-04",
+      "enunciado": "Según el decreto, ¿cuál es la diferencia entre clase IIa y clase IIb?",
+      "opciones": [
+        { "id": "a", "texto": "IIa es riesgo moderado con controles en la fabricación; IIb es riesgo alto con controles en el diseño y la fabricación" },
+        { "id": "b", "texto": "IIa es invasivo y IIb no invasivo" },
+        { "id": "c", "texto": "IIa requiere registro y IIb permiso de comercialización" },
+        { "id": "d", "texto": "IIa es de uso ambulatorio y IIb de uso hospitalario" }
+      ],
+      "correcta": "a",
+      "explicacion": "El artículo 5 define IIa como riesgo moderado sujeto a controles especiales en la fase de fabricación, y IIb como riesgo alto sujeto a controles especiales en el diseño y la fabricación.",
+      "fuente": "Decreto 4725 de 2005, artículo 5"
+    }
+  ]
+}
