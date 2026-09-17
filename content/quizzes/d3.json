@@ -1,0 +1,77 @@
+{
+  "leccion": "d3-ficha-tecnica",
+  "aprobacion": 0.7,
+  "intentos": 2,
+  "preguntas": [
+    {
+      "id": "d3-p1",
+      "criterio": "BP-03",
+      "enunciado": "Una IPS no tiene fichas técnicas de sus equipos biomédicos. ¿Es hallazgo de habilitación?",
+      "opciones": [
+        { "id": "a", "texto": "Sí, el estándar de dotación las exige" },
+        { "id": "b", "texto": "No: el estándar de dotación no menciona la ficha técnica" },
+        { "id": "c", "texto": "Sí, pero solo para equipos de clase IIb y III" },
+        { "id": "d", "texto": "Depende de la complejidad del prestador" }
+      ],
+      "correcta": "b",
+      "explicacion": "La ficha técnica no aparece en el estándar de dotación. Es buena práctica, y su valor está en respaldar criterios que sí son exigibles.",
+      "fuente": "Resolución 3100 de 2019, numeral 11.1.3"
+    },
+    {
+      "id": "d3-p2",
+      "criterio": "BP-04",
+      "enunciado": "¿Por qué el manual del fabricante es la buena práctica más importante del módulo?",
+      "opciones": [
+        { "id": "a", "texto": "Porque el verificador siempre lo pide" },
+        { "id": "b", "texto": "Porque sin él no se puede demostrar el cumplimiento de las recomendaciones del fabricante, que sí es exigible" },
+        { "id": "c", "texto": "Porque contiene el registro sanitario del equipo" },
+        { "id": "d", "texto": "Porque reemplaza a la hoja de vida" }
+      ],
+      "correcta": "b",
+      "explicacion": "El numeral 2.1 exige cumplir las recomendaciones del fabricante. Sin el manual no hay forma de acreditar cuáles son esas recomendaciones, y los criterios DOT-06 y DOT-07 quedan sin respaldo.",
+      "fuente": "Resolución 3100 de 2019, numeral 11.1.3 - 2.1"
+    },
+    {
+      "id": "d3-p3",
+      "criterio": "BP-03",
+      "enunciado": "Una IPS tiene tres monitores idénticos, misma marca y modelo. ¿Cuántas fichas técnicas y cuántas hojas de vida necesita?",
+      "opciones": [
+        { "id": "a", "texto": "Tres fichas y tres hojas de vida" },
+        { "id": "b", "texto": "Una ficha y una hoja de vida" },
+        { "id": "c", "texto": "Una ficha y tres hojas de vida" },
+        { "id": "d", "texto": "Tres fichas y una hoja de vida" }
+      ],
+      "correcta": "c",
+      "explicacion": "La ficha técnica describe el modelo, así que es la misma para los tres. La hoja de vida describe cada unidad y su historial, así que va una por equipo.",
+      "fuente": "Resolución 3100 de 2019, numeral 11.1.3 - 2.2"
+    },
+    {
+      "id": "d3-p4",
+      "criterio": "BP-03",
+      "enunciado": "¿Cuál es la fuente más confiable para elaborar una ficha técnica?",
+      "opciones": [
+        { "id": "a", "texto": "La página del distribuidor donde se compró el equipo" },
+        { "id": "b", "texto": "El manual del fabricante o la documentación técnica entregada en la compra" },
+        { "id": "c", "texto": "La ficha de un equipo similar de otra marca" },
+        { "id": "d", "texto": "La descripción que aparece en la factura" }
+      ],
+      "correcta": "b",
+      "explicacion": "El material de sitios de venta suele ser publicitario, con datos incompletos o de otra referencia del mismo modelo. Lo ideal es exigir la documentación técnica como condición de la orden de compra.",
+      "fuente": "Vocabulario de práctica"
+    },
+    {
+      "id": "d3-p5",
+      "criterio": "BP-03",
+      "enunciado": "La ficha de una nevera de biológicos indica condiciones de operación del fabricante. ¿Dónde deja de ser buena práctica y pasa a respaldar una exigencia?",
+      "opciones": [
+        { "id": "a", "texto": "En ningún caso: siempre es buena práctica" },
+        { "id": "b", "texto": "En el numeral 11.1.4 - 7, que exige almacenar según las condiciones definidas por el fabricante" },
+        { "id": "c", "texto": "En el estándar de infraestructura" },
+        { "id": "d", "texto": "Solo si el equipo es de clase III" }
+      ],
+      "correcta": "b",
+      "explicacion": "Ese numeral exige que las reservas se almacenen en las condiciones definidas por el fabricante, y que se cuente con instrumento para medir humedad y temperatura, con registro, control y gestión. La referencia del fabricante deja de ser opcional.",
+      "fuente": "Resolución 3100 de 2019, numeral 11.1.4 - 7"
+    }
+  ]
+}
