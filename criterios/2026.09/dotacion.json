@@ -1,244 +1,201 @@
 {
   "meta": {
     "version": "2026.09",
-    "fecha": "2026-09-16",
-    "estandar": "Dotación",
-    "norma_base": "Resolución 3100 de 2019 y modificatorias (vigente por Resolución 2080 de 2026)",
-    "estado": "borrador",
-    "nota": "Redacción propia a partir del anexo técnico. Cada criterio debe contrastarse con el texto oficial y validarse con los expertos antes del piloto.",
-    "aplica_a": {
+    "fecha": "2026-09-17",
+    "estado": "verificado_contra_texto_oficial",
+    "fuente_primaria": {
+      "norma": "Resolución 3100 de 2019",
+      "archivo": "fuentes/res-3100-2019.pdf",
+      "paginas_consultadas": "68 a 73 y 130 a 132",
+      "secciones": [
+        "11.1.3 Estándar de dotación",
+        "11.1.4 Estándar de medicamentos, dispositivos médicos e insumos",
+        "11.3.11 Servicio de toma de muestras de laboratorio clínico"
+      ]
+    },
+    "pendiente": "Contrastar contra la Resolución 465 de 2025 y validar con expertos antes del piloto.",
+    "alcance": {
       "tipo_prestador": "IPS",
       "complejidad": "baja",
+      "modalidad": "intramural",
       "servicios": ["consulta externa medicina general", "enfermería", "toma de muestras de laboratorio clínico"]
+    },
+    "niveles_de_fuente": {
+      "expresa": "El numeral lo exige literalmente. Su incumplimiento es hallazgo de habilitación.",
+      "remision": "El numeral remite a un tercero (fabricante o a lo documentado por el prestador). Es exigible cuando ese tercero lo establece.",
+      "buena_practica": "No lo exige la Resolución 3100. Se enseña, se recomienda, pero no reprueba."
     }
   },
   "criterios": [
-    {
-      "codigo": "DOT-INV-01",
-      "leccion": "D1",
-      "descripcion": "Existe un inventario de equipos biomédicos por servicio y sede.",
-      "evidencia_esperada": "Documento de inventario con servicio y sede identificados.",
-      "riesgo": "medio"
-    },
-    {
-      "codigo": "DOT-INV-02",
-      "leccion": "D1",
-      "descripcion": "Cada equipo del inventario está identificado de forma única.",
-      "evidencia_esperada": "Marca, modelo, serie, código interno y ubicación por equipo.",
-      "riesgo": "medio"
-    },
-    {
-      "codigo": "DOT-INV-03",
-      "leccion": "D1",
-      "descripcion": "El inventario es coherente con los servicios declarados por el prestador.",
-      "evidencia_esperada": "Los equipos exigidos para cada servicio habilitado aparecen en el inventario.",
+    { "codigo": "DOT-01", "leccion": "D1",
+      "descripcion": "El prestador cuenta con el registro de la relación de los equipos biomédicos requeridos para los servicios que oferta.",
+      "evidencia_esperada": "Documento de inventario de equipos biomédicos.",
       "riesgo": "alto",
-      "cruza_con": ["DOT-MTO-02"]
-    },
-    {
-      "codigo": "DOT-REG-01",
-      "leccion": "D2",
-      "descripcion": "Cada dispositivo médico cuenta con registro sanitario o permiso de comercialización vigente.",
-      "evidencia_esperada": "Número de registro y fecha de vigencia, verificable en la consulta del INVIMA.",
-      "riesgo": "alto",
-      "norma_complementaria": "Decreto 4725 de 2005"
-    },
-    {
-      "codigo": "DOT-REG-02",
-      "leccion": "D2",
-      "descripcion": "El registro sanitario corresponde a la marca y el modelo del equipo instalado.",
-      "evidencia_esperada": "Coincidencia entre el registro y los datos del equipo.",
-      "riesgo": "alto"
-    },
-    {
-      "codigo": "DOT-REG-03",
-      "leccion": "D2",
-      "descripcion": "La clasificación de riesgo del dispositivo está documentada.",
-      "evidencia_esperada": "Clase I, IIa, IIb o III registrada en la hoja de vida o ficha técnica.",
+      "fuente": { "norma": "Resolución 3100 de 2019", "numeral": "11.1.3 - 1", "nivel": "expresa" } },
+
+    { "codigo": "DOT-02", "leccion": "D1",
+      "descripcion": "El registro identifica cada equipo con nombre, marca, modelo y serie.",
+      "evidencia_esperada": "Los cuatro campos diligenciados por equipo.",
       "riesgo": "medio",
-      "norma_complementaria": "Decreto 4725 de 2005"
-    },
-    {
-      "codigo": "DOT-FT-01",
-      "leccion": "D3",
-      "descripcion": "Existe ficha técnica del equipo con sus especificaciones.",
-      "evidencia_esperada": "Especificaciones técnicas, requisitos eléctricos, accesorios y consumibles.",
-      "riesgo": "bajo"
-    },
-    {
-      "codigo": "DOT-FT-02",
-      "leccion": "D3",
-      "descripcion": "La ficha técnica indica las condiciones ambientales y de instalación requeridas.",
-      "evidencia_esperada": "Rangos de temperatura, humedad y condiciones eléctricas.",
-      "riesgo": "bajo"
-    },
-    {
-      "codigo": "DOT-HV-01",
-      "leccion": "D4",
-      "descripcion": "Cada equipo biomédico tiene hoja de vida.",
-      "evidencia_esperada": "Documento individual por equipo, no por modelo.",
-      "riesgo": "alto"
-    },
-    {
-      "codigo": "DOT-HV-02",
-      "leccion": "D4",
-      "descripcion": "La hoja de vida identifica el equipo de forma completa.",
-      "evidencia_esperada": "Nombre, marca, modelo, serie, código interno y ubicación.",
-      "riesgo": "medio"
-    },
-    {
-      "codigo": "DOT-HV-03",
-      "leccion": "D4",
-      "descripcion": "La hoja de vida registra la periodicidad de mantenimiento y calibración según el fabricante.",
-      "evidencia_esperada": "Frecuencia explícita y coherente con el manual del equipo.",
+      "fuente": { "norma": "Resolución 3100 de 2019", "numeral": "11.1.3 - 1.1 a 1.4", "nivel": "expresa" } },
+
+    { "codigo": "DOT-03", "leccion": "D2",
+      "descripcion": "El registro incluye el registro sanitario del dispositivo médico, o el permiso de comercialización para equipos biomédicos de tecnología controlada, cuando lo requiera.",
+      "evidencia_esperada": "Número de registro o permiso por equipo que lo requiera.",
       "riesgo": "alto",
-      "cruza_con": ["DOT-MTO-03"]
-    },
-    {
-      "codigo": "DOT-HV-04",
-      "leccion": "D4",
-      "descripcion": "La hoja de vida registra los datos de adquisición del equipo.",
-      "evidencia_esperada": "Fecha, proveedor, forma de adquisición (compra, donación, comodato) y garantía.",
-      "riesgo": "medio"
-    },
-    {
-      "codigo": "DOT-HV-05",
-      "leccion": "D4",
-      "descripcion": "Los datos de la hoja de vida coinciden con el soporte de adquisición.",
-      "evidencia_esperada": "Serie, marca y modelo iguales en hoja de vida y factura o contrato.",
+      "fuente": { "norma": "Resolución 3100 de 2019", "numeral": "11.1.3 - 1.5", "nivel": "expresa" },
+      "norma_complementaria": "Decreto 4725 de 2005" },
+
+    { "codigo": "DOT-04", "leccion": "D2",
+      "descripcion": "El registro incluye la clasificación por riesgo del equipo, cuando lo requiera.",
+      "evidencia_esperada": "Clase consignada, coherente con el registro sanitario.",
+      "riesgo": "medio",
+      "fuente": { "norma": "Resolución 3100 de 2019", "numeral": "11.1.3 - 1.6", "nivel": "expresa" } },
+
+    { "codigo": "DOT-05", "leccion": "D7",
+      "descripcion": "Existe programa de mantenimiento preventivo de los equipos biomédicos.",
+      "evidencia_esperada": "Documento del programa, con los equipos cubiertos.",
       "riesgo": "alto",
-      "cruza_con": ["DOT-ADQ-02"]
-    },
-    {
-      "codigo": "DOT-HV-06",
-      "leccion": "D4",
-      "descripcion": "La hoja de vida registra el historial de intervenciones del equipo.",
-      "evidencia_esperada": "Fecha, tipo de intervención y responsable de cada evento.",
-      "riesgo": "medio"
-    },
-    {
-      "codigo": "DOT-ADQ-01",
-      "leccion": "D5",
-      "descripcion": "Existe soporte de propiedad o tenencia del equipo.",
-      "evidencia_esperada": "Factura, contrato de comodato, arriendo o acta de donación.",
-      "riesgo": "medio"
-    },
-    {
-      "codigo": "DOT-ADQ-02",
-      "leccion": "D5",
-      "descripcion": "El soporte de adquisición es válido y coherente con el equipo.",
-      "evidencia_esperada": "Proveedor y NIT identificados; marca, modelo y serie coincidentes; fecha coherente.",
-      "riesgo": "alto"
-    },
-    {
-      "codigo": "DOT-MAN-01",
-      "leccion": "D6",
-      "descripcion": "El equipo cuenta con manual de operación disponible para el usuario.",
-      "evidencia_esperada": "Manual en español, accesible en el punto de atención o en el sistema documental.",
-      "riesgo": "medio"
-    },
-    {
-      "codigo": "DOT-MTO-01",
-      "leccion": "D7",
-      "descripcion": "Existe un plan y cronograma de mantenimiento preventivo.",
-      "evidencia_esperada": "Documento con periodo, equipos y responsable.",
-      "riesgo": "alto"
-    },
-    {
-      "codigo": "DOT-MTO-02",
-      "leccion": "D7",
-      "descripcion": "El cronograma cubre todos los equipos del inventario.",
-      "evidencia_esperada": "Cada equipo del inventario aparece programado.",
+      "fuente": { "norma": "Resolución 3100 de 2019", "numeral": "11.1.3 - 2.1", "nivel": "expresa" },
+      "cruza_con": ["DOT-01"] },
+
+    { "codigo": "DOT-06", "leccion": "D7",
+      "descripcion": "El programa cumple las recomendaciones del fabricante; cuando el fabricante no las define, se aplica el protocolo de mantenimiento definido por el prestador.",
+      "evidencia_esperada": "Coincidencia entre la frecuencia programada y el manual del equipo, o protocolo propio documentado cuando el fabricante no la define.",
       "riesgo": "alto",
-      "cruza_con": ["DOT-INV-03"]
-    },
-    {
-      "codigo": "DOT-MTO-03",
-      "leccion": "D7",
-      "descripcion": "La frecuencia programada corresponde a la recomendada por el fabricante.",
-      "evidencia_esperada": "Coincidencia entre cronograma, hoja de vida y manual.",
+      "fuente": { "norma": "Resolución 3100 de 2019", "numeral": "11.1.3 - 2.1", "nivel": "remision" },
+      "cruza_con": ["DOT-05"] },
+
+    { "codigo": "DOT-07", "leccion": "D9",
+      "descripcion": "Cuando el fabricante establece verificación o calibración del equipo, existe evidencia de su cumplimiento en la periodicidad indicada.",
+      "evidencia_esperada": "Certificado o registro de calibración o verificación, dentro de la vigencia que indique el fabricante.",
       "riesgo": "alto",
-      "cruza_con": ["DOT-HV-03"]
-    },
-    {
-      "codigo": "DOT-RPT-01",
-      "leccion": "D8",
-      "descripcion": "Existen reportes de los mantenimientos ejecutados.",
-      "evidencia_esperada": "Reportes de preventivo y correctivo del periodo evaluado.",
-      "riesgo": "alto"
-    },
-    {
-      "codigo": "DOT-RPT-02",
-      "leccion": "D8",
-      "descripcion": "El reporte de mantenimiento contiene los datos mínimos y las firmas.",
-      "evidencia_esperada": "Equipo, fecha, actividades, repuestos, responsable que ejecuta y quien recibe.",
-      "riesgo": "medio"
-    },
-    {
-      "codigo": "DOT-CAL-01",
-      "leccion": "D9",
-      "descripcion": "Los equipos de medición sujetos a calibración están identificados.",
-      "evidencia_esperada": "Listado de equipos de medición dentro del inventario.",
-      "riesgo": "medio"
-    },
-    {
-      "codigo": "DOT-CAL-02",
-      "leccion": "D9",
-      "descripcion": "Los certificados de calibración están vigentes.",
-      "evidencia_esperada": "Certificado con fecha de calibración y periodicidad definida.",
-      "riesgo": "alto"
-    },
-    {
-      "codigo": "DOT-CAL-03",
-      "leccion": "D9",
-      "descripcion": "El certificado evidencia trazabilidad metrológica.",
+      "fuente": { "norma": "Resolución 3100 de 2019", "numeral": "11.1.3 - 2.1", "nivel": "remision" },
+      "nota": "La Resolución 3100 no exige calibración de forma general. La exigencia entra por la remisión al fabricante del numeral 2.1. La calibración sí es exigencia expresa en servicios con equipos generadores de radiación ionizante, fuera del alcance de este piloto." },
+
+    { "codigo": "DOT-08", "leccion": "D4",
+      "descripcion": "Cada equipo biomédico cuenta con hoja de vida con los registros de los mantenimientos preventivos y correctivos, según corresponda.",
+      "evidencia_esperada": "Hoja de vida individual con historial de intervenciones.",
+      "riesgo": "alto",
+      "fuente": { "norma": "Resolución 3100 de 2019", "numeral": "11.1.3 - 2.2", "nivel": "expresa" },
+      "cruza_con": ["DOT-05"] },
+
+    { "codigo": "DOT-09", "leccion": "D11",
+      "descripcion": "Existe programa de capacitación en el uso de dispositivos médicos cuando estos lo requieran.",
+      "evidencia_esperada": "Programa de capacitación, que puede ser desarrollado por el fabricante, el importador o el propio prestador.",
+      "riesgo": "medio",
+      "fuente": { "norma": "Resolución 3100 de 2019", "numeral": "11.1.3 - 3", "nivel": "expresa" } },
+
+    { "codigo": "DOT-10", "leccion": "D1",
+      "descripcion": "La dotación de los servicios está en concordancia con lo definido por el prestador en el estándar de procesos prioritarios.",
+      "evidencia_esperada": "Coherencia entre el inventario y los procedimientos que el prestador documentó.",
+      "riesgo": "alto",
+      "fuente": { "norma": "Resolución 3100 de 2019", "numeral": "11.1.3 - 4", "nivel": "remision" },
+      "cruza_con": ["DOT-01", "DOT-13"] },
+
+    { "codigo": "DOT-11", "leccion": "D1",
+      "descripcion": "La cantidad de equipos biomédicos es suficiente para la frecuencia de uso, incluidos los tiempos de esterilización cuando aplique.",
+      "evidencia_esperada": "Justificación de suficiencia frente a la demanda del servicio.",
+      "riesgo": "medio",
+      "fuente": { "norma": "Resolución 3100 de 2019", "numeral": "11.1.3 - 5", "nivel": "expresa" } },
+
+    { "codigo": "DOT-12", "leccion": "D8",
+      "descripcion": "El mantenimiento es ejecutado por talento humano profesional, tecnólogo o técnico en áreas relacionadas, sea propio o mediante contrato o convenio con un tercero.",
+      "evidencia_esperada": "Soporte de la formación de quien ejecuta, o contrato o convenio con el tercero.",
+      "riesgo": "alto",
+      "fuente": { "norma": "Resolución 3100 de 2019", "numeral": "11.1.3 - 6", "nivel": "expresa" } },
+
+    { "codigo": "DOT-13", "leccion": "D1",
+      "descripcion": "El servicio de toma de muestras cuenta con los equipos biomédicos necesarios según las muestras que se tomen, de acuerdo con lo documentado en procesos prioritarios.",
+      "evidencia_esperada": "Equipos presentes coherentes con los procedimientos documentados del servicio.",
+      "riesgo": "alto",
+      "fuente": { "norma": "Resolución 3100 de 2019", "numeral": "11.3.11 - 7", "nivel": "remision" },
+      "aplica_a_servicio": "toma de muestras de laboratorio clínico" },
+
+    { "codigo": "MED-01", "leccion": "D2",
+      "descripcion": "Los dispositivos médicos cuentan con información documentada de verificación y seguimiento: descripción, marca, serie cuando aplique, presentación comercial, registro sanitario o permiso de comercialización vigente, clasificación por riesgo, vida útil cuando aplique, lote y fecha de vencimiento.",
+      "evidencia_esperada": "Registro documental con los nueve campos, según apliquen al dispositivo.",
+      "riesgo": "alto",
+      "fuente": { "norma": "Resolución 3100 de 2019", "numeral": "11.1.4 - 2", "nivel": "expresa" } },
+
+    { "codigo": "MED-02", "leccion": "V4",
+      "descripcion": "Existe información documentada de los procesos generales que apliquen: selección, adquisición, transporte, recepción, almacenamiento, conservación, control de fechas de vencimiento, cadena de frío, distribución, dispensación, devolución y disposición final.",
+      "evidencia_esperada": "Documento de procesos con los que apliquen al prestador.",
+      "riesgo": "alto",
+      "fuente": { "norma": "Resolución 3100 de 2019", "numeral": "11.1.4 - 4", "nivel": "expresa" } },
+
+    { "codigo": "MED-03", "leccion": "V4",
+      "descripcion": "El prestador cuenta con información documentada de la planeación y ejecución de los programas de farmacovigilancia, tecnovigilancia y reactivovigilancia, cuando aplique.",
+      "evidencia_esperada": "Documento de los programas, con planeación y evidencia de ejecución.",
+      "riesgo": "alto",
+      "fuente": { "norma": "Resolución 3100 de 2019", "numeral": "11.1.4 - 6", "nivel": "expresa" },
+      "norma_complementaria": "Resolución 4816 de 2008" },
+
+    { "codigo": "MED-04", "leccion": "V4",
+      "descripcion": "Las reservas se almacenan en condiciones apropiadas de temperatura, humedad, ventilación, segregación y seguridad, de acuerdo con las condiciones definidas por el fabricante.",
+      "evidencia_esperada": "Condiciones del sitio de almacenamiento acordes al fabricante.",
+      "riesgo": "alto",
+      "fuente": { "norma": "Resolución 3100 de 2019", "numeral": "11.1.4 - 7", "nivel": "remision" } },
+
+    { "codigo": "MED-05", "leccion": "V4",
+      "descripcion": "El prestador cuenta con instrumento para medir humedad relativa y temperatura, y evidencia su registro, control y gestión.",
+      "evidencia_esperada": "Instrumento disponible y registros de temperatura y humedad con evidencia de gestión ante desviaciones.",
+      "riesgo": "alto",
+      "fuente": { "norma": "Resolución 3100 de 2019", "numeral": "11.1.4 - 7", "nivel": "expresa" },
+      "cruza_con": ["MED-04"] },
+
+    { "codigo": "MED-06", "leccion": "D2",
+      "descripcion": "Los reactivos de diagnóstico in vitro cuentan con información documentada: nombre, marca, presentación comercial, registro sanitario o permiso vigente, clasificación del riesgo sanitario, vida útil cuando aplique, fecha de vencimiento y lote.",
+      "evidencia_esperada": "Registro documental de los reactivos del servicio.",
+      "riesgo": "medio",
+      "fuente": { "norma": "Resolución 3100 de 2019", "numeral": "11.1.4 - 3", "nivel": "expresa" },
+      "aplica_a_servicio": "toma de muestras de laboratorio clínico" },
+
+    { "codigo": "BP-01", "leccion": "D1",
+      "descripcion": "El inventario incluye código interno y ubicación de cada equipo.",
+      "evidencia_esperada": "Campos adicionales en el inventario.",
+      "riesgo": "bajo",
+      "fuente": { "nivel": "buena_practica" },
+      "nota": "El numeral 11.1.3 - 1 no exige código ni ubicación. Facilita la trazabilidad y la visita de verificación." },
+
+    { "codigo": "BP-02", "leccion": "D5",
+      "descripcion": "Existe soporte de adquisición o tenencia del equipo, coherente con los datos de la hoja de vida.",
+      "evidencia_esperada": "Factura, contrato de comodato o acta de donación, con marca, modelo y serie coincidentes.",
+      "riesgo": "bajo",
+      "fuente": { "nivel": "buena_practica" },
+      "nota": "El estándar de dotación no exige soporte de propiedad. Es práctica de gestión de tecnología y sirve para verificar la identidad del equipo." },
+
+    { "codigo": "BP-03", "leccion": "D3",
+      "descripcion": "Existe ficha técnica del equipo con sus especificaciones y condiciones de instalación.",
+      "evidencia_esperada": "Ficha técnica del modelo.",
+      "riesgo": "bajo",
+      "fuente": { "nivel": "buena_practica" } },
+
+    { "codigo": "BP-04", "leccion": "D6",
+      "descripcion": "El manual de operación del equipo está disponible para el usuario.",
+      "evidencia_esperada": "Manual accesible en el punto de atención o en el sistema documental.",
+      "riesgo": "bajo",
+      "fuente": { "nivel": "buena_practica" },
+      "nota": "Sin el manual no se puede demostrar el cumplimiento de DOT-06 ni DOT-07, que sí son exigibles." },
+
+    { "codigo": "BP-05", "leccion": "D9",
+      "descripcion": "El certificado de calibración evidencia trazabilidad metrológica.",
       "evidencia_esperada": "Laboratorio acreditado, patrones de referencia, error e incertidumbre.",
-      "riesgo": "medio",
-      "referencia_tecnica": "ISO/IEC 17025"
-    },
-    {
-      "codigo": "DOT-TCV-01",
-      "leccion": "D10",
-      "descripcion": "El prestador cuenta con programa institucional de tecnovigilancia documentado.",
-      "evidencia_esperada": "Documento con objetivo, responsable designado y procedimiento de reporte.",
-      "riesgo": "alto",
-      "norma_complementaria": "Resolución 4816 de 2008"
-    },
-    {
-      "codigo": "DOT-TCV-02",
-      "leccion": "D10",
-      "descripcion": "Existen registros de los reportes realizados al programa nacional.",
-      "evidencia_esperada": "Reportes de eventos e incidentes o reporte trimestral en cero.",
-      "riesgo": "alto",
-      "norma_complementaria": "Resolución 4816 de 2008"
-    },
-    {
-      "codigo": "DOT-TCV-03",
-      "leccion": "D10",
-      "descripcion": "Se evidencia consulta y gestión de alertas sanitarias.",
-      "evidencia_esperada": "Registro de consulta de alertas y acciones sobre equipos del inventario.",
-      "riesgo": "medio"
-    },
-    {
-      "codigo": "DOT-CAP-01",
-      "leccion": "D11",
-      "descripcion": "Existe plan de capacitación en el uso de los equipos biomédicos.",
-      "evidencia_esperada": "Plan con temas, dirigido a los usuarios de cada servicio.",
-      "riesgo": "medio"
-    },
-    {
-      "codigo": "DOT-CAP-02",
-      "leccion": "D11",
-      "descripcion": "La capacitación ejecutada está evidenciada.",
-      "evidencia_esperada": "Acta, lista de asistencia firmada y evaluación de la capacitación.",
-      "riesgo": "medio"
-    },
-    {
-      "codigo": "DOT-BAJ-01",
-      "leccion": "D12",
-      "descripcion": "Las bajas de equipos están documentadas.",
-      "evidencia_esperada": "Acta de baja con justificación técnica y disposición final.",
-      "riesgo": "bajo"
-    }
+      "riesgo": "bajo",
+      "fuente": { "nivel": "buena_practica" },
+      "referencia_tecnica": "ISO/IEC 17025" },
+
+    { "codigo": "BP-06", "leccion": "D11",
+      "descripcion": "La capacitación ejecutada está evidenciada con acta, lista de asistencia y evaluación.",
+      "evidencia_esperada": "Soportes de la ejecución del programa.",
+      "riesgo": "bajo",
+      "fuente": { "nivel": "buena_practica" },
+      "nota": "El numeral 11.1.3 - 3 exige el programa. La evidencia de ejecución es lo que suele pedir el verificador en campo." },
+
+    { "codigo": "BP-07", "leccion": "D12",
+      "descripcion": "Las bajas de equipos están documentadas con justificación técnica y disposición final.",
+      "evidencia_esperada": "Acta de baja.",
+      "riesgo": "bajo",
+      "fuente": { "nivel": "buena_practica" } }
   ]
 }
