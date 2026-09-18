@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --color-fondo: #fbfbfa;
+  --color-superficie: #ffffff;
+  --color-borde: #e4e4e0;
+  --color-texto: #1c1c1a;
+  --color-texto-suave: #6b6b66;
+  --color-acento: #2d5f5d;
+  --color-hallazgo: #9b2c2c;
+  --color-advertencia: #8a6d1f;
+  --color-cumple: #2f6b3f;
+}
+
+body {
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.leccion h2 { font-size: 1.125rem; font-weight: 500; margin: 2rem 0 0.75rem; }
+.leccion h3 { font-size: 1rem; font-weight: 500; margin: 1.5rem 0 0.5rem; }
+.leccion p { margin: 0.75rem 0; line-height: 1.7; }
+.leccion ul, .leccion ol { margin: 0.75rem 0; padding-left: 1.25rem; line-height: 1.7; }
+.leccion li { margin: 0.25rem 0; }
+.leccion ul { list-style: disc; }
+.leccion ol { list-style: decimal; }
+.leccion strong { font-weight: 600; }
+.leccion blockquote {
+  border-left: 2px solid var(--color-acento);
+  padding: 0.25rem 0 0.25rem 1rem;
+  margin: 1.25rem 0;
+  color: var(--color-texto-suave);
+  font-style: italic;
+}
+.leccion table { width: 100%; margin: 1.25rem 0; font-size: 0.875rem; border-collapse: collapse; }
+.leccion th {
+  text-align: left; font-weight: 500; padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--color-borde);
+  color: var(--color-texto-suave);
+}
+.leccion td { padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--color-borde); vertical-align: top; }
+.leccion code {
+  font-size: 0.875em; background: var(--color-borde);
+  padding: 0.1rem 0.3rem; border-radius: 3px;
+}
+.leccion pre {
+  background: var(--color-superficie); border: 1px solid var(--color-borde);
+  padding: 1rem; border-radius: 8px; overflow-x: auto; margin: 1.25rem 0;
+}
+.leccion pre code { background: none; padding: 0; }

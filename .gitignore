@@ -9,3 +9,6 @@ supabase/.temp
 coverage/
 *.log
 fuentes/
+.next/
+next-env.d.ts
+*.tsbuildinfo

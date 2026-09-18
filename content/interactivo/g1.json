@@ -1,0 +1,77 @@
+{
+  "leccion": "g1-que-exige-la-norma",
+  "titulo": "Qué exige realmente la norma",
+  "modulo": "gestion-documental",
+  "elementos": [
+    { "id": "a", "texto": "Que el documento esté escrito" },
+    { "id": "b", "texto": "Que el personal lo conozca" },
+    { "id": "c", "texto": "Código del documento" },
+    { "id": "d", "texto": "Número de versión" },
+    { "id": "e", "texto": "Firmas de elaboró, revisó y aprobó" },
+    { "id": "f", "texto": "Listado maestro de documentos" }
+  ],
+  "momentos": [
+    {
+      "dice": "Hola. Vamos a empezar por lo más importante de toda la documentación de habilitación: saber qué exige la norma de verdad, y qué no."
+    },
+    {
+      "dice": "Cuando uno entra a una IPS y pregunta qué se necesita para la documentación, casi siempre aparece esta lista.",
+      "muestra": ["a", "b", "c", "d", "e", "f"]
+    },
+    {
+      "dice": "Código, versión, firmas, listado maestro. Todo eso se pide como si fuera obligatorio.",
+      "muestra": [],
+      "destaca": ["c", "d", "e", "f"]
+    },
+    {
+      "dice": "Pero de los seis, la Resolución 3100 solo exige dos. Estos.",
+      "destaca": ["a", "b"],
+      "atenua": ["c", "d", "e", "f"]
+    },
+    {
+      "dice": "Que el documento esté escrito, y que el personal lo conozca. Nada más. Te muestro de dónde sale eso."
+    }
+  ],
+  "pasos": [
+    {
+      "tipo": "norma",
+      "instruccion": "Esta es la definición oficial de información documentada.",
+      "cita": "Información escrita y socializada de procesos, procedimientos, actividades en un servicio de salud, que puede estar en medio físico o magnético, ser de cualquier fuente y estar en cualquier formato o idioma.",
+      "fuente": "Resolución 3100 de 2019, sección 4.6",
+      "resaltes": [
+        { "palabras": "escrita", "nota": "Primer requisito. Tiene que existir en algún soporte." },
+        { "palabras": "socializada", "nota": "Segundo requisito, y el que más se incumple. Quien debe aplicarla tiene que conocerla." },
+        { "palabras": "medio físico o magnético", "nota": "Papel o digital, da igual. La norma no prefiere ninguno." },
+        { "palabras": "cualquier fuente", "nota": "Puedes tomarla de otro documento. Lo que importa es que describa tu operación." },
+        { "palabras": "cualquier formato o idioma", "nota": "No hay plantilla obligatoria. Ni siquiera exige que esté en español." }
+      ]
+    },
+    {
+      "tipo": "decidir",
+      "escenario": "Llega el verificador. El protocolo de limpieza está impecable: codificado, versionado, firmado. Le pregunta a la auxiliar cómo desinfecta las superficies y ella responde algo distinto a lo que dice el documento.",
+      "pregunta": "¿Qué concluye el verificador?",
+      "opciones": [
+        {
+          "texto": "El documento cumple: existe y está aprobado",
+          "correcta": false,
+          "consecuencia": "No. La socialización hace parte de la definición, no es un extra. Un documento que nadie conoce incumple igual que uno inexistente."
+        },
+        {
+          "texto": "Hay hallazgo: falta la socialización",
+          "correcta": true,
+          "consecuencia": "Así es. Y fíjate cómo lo comprobó: preguntándole al personal, no revisando papeles. No hay forma de preparar eso la noche anterior."
+        }
+      ]
+    },
+    {
+      "tipo": "cierre",
+      "titulo": "Lo que te llevas",
+      "puntos": [
+        "La norma exige dos cosas: que esté escrita y que esté socializada.",
+        "Código, versión, firmas y listado maestro no son exigibles, pero sostienen lo que sí lo es.",
+        "La socialización se verifica preguntándole al personal."
+      ],
+      "siguiente": "En la próxima lección: por qué 'procedimiento' no significa lo que crees."
+    }
+  ]
+}
